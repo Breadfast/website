@@ -698,19 +698,19 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Products Section
+# How Section
 --------------------------------------------------------------*/
-#products {
+#how {
   width: 100%;
   height: 80vh;
   background: #fff;
 }
 
-#products .container {
+#how .container {
   padding-top: 72px;
 }
 
-#products h1 {
+#how h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 700;
@@ -718,13 +718,13 @@ section {
   color: #2f363c;
 }
 
-#products h2 {
+#how h2 {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 50px;
   font-size: 24px;
 }
 
-#products .btn-get-started {
+#how .btn-get-started {
   font-family: "Jost", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -738,73 +738,145 @@ section {
   background: #47b2e4;
 }
 
-#products .btn-get-started:hover {
+#how .btn-get-started:hover {
   background: #209dd8;
 }
 
-#products .btn-watch-video {
-  font-size: 16px;
+.method {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+  transition: 0.5s;
+}
+
+.method .pic {
+  overflow: hidden;
+  width: 180px;
+  border-radius: 50%;
+}
+
+.method .pic img {
+  transition: ease-in-out 0.3s;
+}
+
+.method:hover {
+  transform: translateY(-10px);
+}
+
+.method .method-info {
+  padding-left: 30px;
+}
+
+.method h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #37517e;
+}
+
+.method span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+
+.method span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #cbd6e9;
+  bottom: 0;
+  left: 0;
+}
+
+.method p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+.method .social {
+  margin-top: 12px;
   display: flex;
   align-items: center;
-  transition: 0.5s;
-  margin: 10px 0 0 25px;
+  justify-content: flex-start;
+}
+
+.method .social a {
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: #eff2f8;
+}
+
+.method .social a i {
+  color: #37517e;
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.method .social a:hover {
+  background: #47b2e4;
+}
+
+.method .social a:hover i {
   color: #fff;
-  line-height: 1;
 }
 
-#products .btn-watch-video i {
-  line-height: 0;
-  color: #fff;
-  font-size: 32px;
-  transition: 0.3s;
-  margin-right: 8px;
+.method .social a + a {
+  margin-left: 8px;
 }
 
-#products .btn-watch-video:hover i {
-  color: #47b2e4;
-}
-
-#products .animated {
+#how .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 @media (max-width: 991px) {
-  #products {
+  #how {
     height: 100vh;
     text-align: center;
   }
-  #products .animated {
+  #how .animated {
     -webkit-animation: none;
     animation: none;
   }
-  #products .products-img {
+  #how .how-img {
     text-align: center;
   }
-  #products .products-img img {
+  #how .how-img img {
     width: 50%;
   }
 }
 
 @media (max-width: 768px) {
-  #products h1 {
+  #how h1 {
     font-size: 28px;
     line-height: 36px;
   }
-  #products h2 {
+  #how h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
-  #products .products-img img {
+  #how .how-img img {
     width: 70%;
   }
 }
 
 @media (max-width: 575px) {
-  #products .products-img img {
+  #how .how-img img {
     width: 80%;
   }
-  #products .btn-get-started {
+  #how .btn-get-started {
     font-size: 16px;
     padding: 10px 24px 11px 24px;
   }
@@ -856,28 +928,28 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About Us
+# Careers
 --------------------------------------------------------------*/
-.about .content h3 {
+.careers .content h3 {
   font-weight: 600;
   font-size: 26px;
 }
 
-.about .content ul {
+.careers .content ul {
   list-style: none;
   padding: 0;
 }
 
-.about .content ul li {
+.careers .content ul li {
   padding-left: 28px;
   position: relative;
 }
 
-.about .content ul li + li {
+.careers .content ul li + li {
   margin-top: 10px;
 }
 
-.about .content ul i {
+.careers .content ul i {
   position: absolute;
   left: 0;
   top: 2px;
@@ -886,11 +958,11 @@ section {
   line-height: 1;
 }
 
-.about .content p:last-child {
+.careers .content p:last-child {
   margin-bottom: 0;
 }
 
-.about .content .btn-learn-more {
+.careers .content .btn-learn-more {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -907,7 +979,7 @@ section {
   border: 2px solid #47b2e4;
 }
 
-.about .content .btn-learn-more:hover {
+.careers .content .btn-learn-more:hover {
   background: #47b2e4;
   color: #fff;
   text-decoration: none;
@@ -1367,7 +1439,7 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.team .member {
+.team .memeber {
   position: relative;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
