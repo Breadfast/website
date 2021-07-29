@@ -146,7 +146,7 @@ h6 {
   #header {
     background: #fff;
   }
-  .logo-text {
+  #header .logo-text {
     display: none;
   }
 }
@@ -297,9 +297,6 @@ h6 {
     display: block;
   }
   .navbar ul {
-    display: none;
-  }
-  .logo-text {
     display: none;
   }
 }
