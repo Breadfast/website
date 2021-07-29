@@ -123,7 +123,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(255, 255, 255, 0.9);
+  background: #fff;
 }
 
 #header .logo {
@@ -132,7 +132,6 @@ h6 {
   padding: 0;
   line-height: 1;
   font-weight: 500;
-  letter-spacing: 2px;
 }
 
 #header .logo a {
@@ -146,6 +145,9 @@ h6 {
 @media (max-width: 991px) {
   #header {
     background: #fff;
+  }
+  .logo-text {
+    display: none;
   }
 }
 
@@ -185,21 +187,27 @@ h6 {
   transition: 0.3s;
 }
 
-.navbar a i,
-.navbar a:focus i {
+.navbar:not(.navbar-mobile) a i,
+.navbar:not(.navbar-mobile) a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
 
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover > a {
+.navbar:not(.navbar-mobile) a:hover,
+.navbar:not(.navbar-mobile) .active,
+.navbar:not(.navbar-mobile) .active:focus,
+.navbar:not(.navbar-mobile) li:hover > a {
   font-weight: bold;
   color: #2f363c;
   border-bottom-style: solid;
   border-color: #aa0082;
+}
+
+.navbar.navbar-mobile a {
+  font-weight: 800;
+  font-size: 24px;
+  color: #aa0082;
 }
 
 .navbar .dropdown ul {
