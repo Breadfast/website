@@ -547,6 +547,8 @@ section {
 #products {
   width: 100%;
   background: #fff;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 #products .container {
@@ -623,10 +625,9 @@ section {
 }
 
 @media (max-width: 991px) {
-  /* #products {
-    height: 100vh;
-    text-align: center;
-  } */
+  #products {
+    padding-bottom: 30px;
+  }
   #products .animated {
     -webkit-animation: none;
     animation: none;
@@ -687,7 +688,7 @@ section {
 --------------------------------------------------------------*/
 #how {
   width: 100%;
-  background: #fff;
+  background: #ffe8c4;
 }
 
 #how .container {
@@ -729,16 +730,16 @@ section {
 .method {
   position: relative;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  border-radius: 5px;
+  padding: 20px 24px 0 50px;
+  border-radius: 16px;
   background: #fff;
   transition: 0.5s;
+  margin: 20px;
 }
 
 .method .pic {
   overflow: hidden;
   width: 180px;
-  border-radius: 50%;
 }
 
 .method .pic img {
@@ -749,15 +750,21 @@ section {
   transform: translateY(-10px);
 }
 
-.method .method-info {
+/* .method .method-info {
   padding-left: 30px;
-}
+} */
 
 .method h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 20px;
-  color: #37517e;
+  font-weight: 800;
+  font-size: 24px;
+  color: #aa0082;
+  margin-bottom: 0;
+}
+
+.method p {
+  margin-top: 0;
+  font-size: 14px;
+  color: #2f363c;
 }
 
 .method span {
@@ -777,11 +784,6 @@ section {
   background: #cbd6e9;
   bottom: 0;
   left: 0;
-}
-
-.method p {
-  margin: 10px 0 0 0;
-  font-size: 14px;
 }
 
 .method .social {
@@ -825,10 +827,6 @@ section {
 }
 
 @media (max-width: 991px) {
-  #how {
-    /* height: 100vh; */
-    text-align: center;
-  }
   #how .animated {
     -webkit-animation: none;
     animation: none;
@@ -838,6 +836,10 @@ section {
   }
   #how .how-img img {
     width: 50%;
+  }
+
+  #how .container {
+    padding-top: 30px;
   }
 }
 
@@ -914,6 +916,10 @@ section {
 /*--------------------------------------------------------------
 # Careers
 --------------------------------------------------------------*/
+#careers h2 {
+  color: #aa0082;
+}
+
 .careers .content h3 {
   font-weight: 600;
   font-size: 26px;
