@@ -1,9 +1,3 @@
-/**
-* Template Name: Arsha - v4.3.0
-* Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
@@ -226,20 +220,17 @@
   });
 
   /**
-   * Portfolio details slider
+   * Blog slider
    */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
+  new Swiper('.blog-slider', {
+    slidesPerView: 3,
+    spaceBetween: 30
+    // breakpoints: {
+    //   991: {
+    //     slidesPerView: 3,
+    //     spaceBetween: 30
+    //   },
+    // }
   });
 
   /**
@@ -254,4 +245,24 @@
     });
   });
 
+  /**
+   * Temp products cards generator
+   */
+  
+   const dynamicImgContainer = document.querySelector('.dynamic-img-container');    
+   for(let i = 0 ; i < 144 ; i++) {
+    // create image
+    const productImg = document.createElement("img");
+    productImg.src="assets/img/home/products-img-1.png";
+    productImg.alt = 'product coca cola';
+    productImg.classList.add("card-img-top");  
+
+    // create card
+    const cardDiv = document.createElement("div");
+    cardDiv.classList.add("card");
+    cardDiv.appendChild(productImg)
+
+    // append image to card
+    dynamicImgContainer.appendChild(cardDiv)
+   }
 })()
