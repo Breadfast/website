@@ -220,20 +220,17 @@
   });
 
   /**
-   * Portfolio details slider
+   * Blog slider
    */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
+  new Swiper('.blog-slider', {
+    slidesPerView: 3,
+    spaceBetween: 30
+    // breakpoints: {
+    //   991: {
+    //     slidesPerView: 3,
+    //     spaceBetween: 30
+    //   },
+    // }
   });
 
   /**
