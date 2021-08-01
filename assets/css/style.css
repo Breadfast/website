@@ -1572,9 +1572,6 @@ section {
   font-weight: bold;
 }
 
-#contact-us-body .social-links {
-}
-
 #contact-us-body .social-links a {
   display: inline-block;
   background: #fff;
@@ -1587,6 +1584,30 @@ section {
   width: 32px;
   height: 32px;
   border: 1px solid #aa0082;
+}
+
+/*--------------------------------------------------------------
+# Covid hero
+--------------------------------------------------------------*/
+#covid-hero {
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Covid description
+--------------------------------------------------------------*/
+#covid-description h1 {
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+}
+
+#covid-description h1 span {
+  color: #aa0082;
+}
+
+#covid-description p {
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
