@@ -1458,7 +1458,6 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #f3f5fa;
   min-height: 40px;
   margin-top: 72px;
 }
@@ -1492,7 +1491,7 @@ section {
   display: inline-block;
   padding-right: 10px;
   color: #4668a2;
-  content: "/";
+  content: ">";
 }
 
 /*--------------------------------------------------------------
@@ -1608,6 +1607,16 @@ section {
 
 #covid-description p {
   text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Job description Hero
+--------------------------------------------------------------*/
+
+#job-description-hero {
+  height: 50vh;
+  background: #e8ffed;
+  color: #143e29;
 }
 
 /*--------------------------------------------------------------
