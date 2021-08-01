@@ -1533,6 +1533,63 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Contact-us Hero
+--------------------------------------------------------------*/
+
+#contact-us-hero {
+  height: 50vh;
+  background: #e8ffed;
+  color: #143e29;
+}
+
+/*--------------------------------------------------------------
+# Contact-us Body
+--------------------------------------------------------------*/
+
+#contact-us-body {
+  padding: 30px;
+}
+
+#contact-us-body .card {
+  margin: 10px;
+  width: 486px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#contact-us-body .card-title {
+  font-weight: bold;
+  font-size: 34px;
+}
+
+#contact-us-body .btn {
+  background: #aa0082;
+  color: #fff;
+}
+
+#contact-us-body .email {
+  color: #aa0082;
+  font-weight: bold;
+}
+
+#contact-us-body .social-links {
+}
+
+#contact-us-body .social-links a {
+  display: inline-block;
+  background: #fff;
+  color: #aa0082;
+  line-height: 1;
+  padding: 6px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #aa0082;
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
