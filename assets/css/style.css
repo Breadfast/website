@@ -32,6 +32,116 @@ h6 {
   font-family: "Jost", sans-serif;
 }
 
+.hr-theme {
+  color: #3e2f2e;
+  background: #fdbdbb;
+}
+
+.hr-line {
+  border-left: 6px solid #fdbdbb;
+  padding: 10px 16px 1px 16px;
+}
+
+.data-science-theme {
+  color: #443c31;
+  background: #ffe9c9;
+}
+
+.data-science-line {
+  border-left: 6px solid #ffe9c9;
+  padding: 10px 16px 1px 16px;
+}
+
+.product-mgmt-theme {
+  color: #202b23;
+  background: #c6f1d5;
+}
+
+.product-mgmt-line {
+  border-left: 6px solid #c6f1d5;
+  padding: 10px 16px 1px 16px;
+}
+
+.technology-theme {
+  color: #313842;
+  background: #c8dcfb;
+}
+
+.technology-line {
+  border-left: 6px solid #c8dcfb;
+  padding: 10px 16px 1px 16px;
+}
+
+.cx-theme {
+  color: #143e29;
+  background: #9bf3cc;
+}
+
+.cx-line {
+  border-left: 6px solid #9bf3cc;
+  padding: 10px 16px 1px 16px;
+}
+
+.commercial-theme {
+  color: #aa0082;
+  background: #ffe9fa;
+}
+
+.commercial-line {
+  border-left: 6px solid #ffe9fa;
+  padding: 10px 16px 1px 16px;
+}
+
+.production-theme {
+  color: #383838;
+  background: #ebebeb;
+}
+
+.production-line {
+  border-left: 6px solid #ebebeb;
+  padding: 10px 16px 1px 16px;
+}
+
+.marketing-theme {
+  color: #12683e;
+  background: #e8ffed;
+}
+
+.marketing-line {
+  border-left: 6px solid #e8ffed;
+  padding: 10px 16px 1px 16px;
+}
+
+.finance-theme {
+  color: #264541;
+  background: #c1f6f0;
+}
+
+.finance-line {
+  border-left: 6px solid #c1f6f0;
+  padding: 10px 16px 1px 16px;
+}
+
+.fp-ops-theme {
+  color: #79005d;
+  background: #f3cfff;
+}
+
+.fp-ops-line {
+  border-left: 6px solid #f3cfff;
+  padding: 10px 16px 1px 16px;
+}
+
+.general-ops-theme {
+  color: #375222;
+  background: #e3ffcd;
+}
+
+.general-ops-line {
+  border-left: 6px solid #e3ffcd;
+  padding: 10px 16px 1px 16px;
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -1617,6 +1727,177 @@ section {
   height: 50vh;
   background: #e8ffed;
   color: #143e29;
+}
+
+/*--------------------------------------------------------------
+# Careers Hero
+--------------------------------------------------------------*/
+
+#careers-hero {
+  width: 100vw;
+  padding: 0;
+}
+
+#careers-hero .join-us-card {
+  width: 459px;
+  height: 237px;
+  padding-top: 43px;
+  position: absolute;
+  top: 436px;
+  left: 318px;
+}
+
+#careers-hero .join-us-card .card-title {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 41px;
+}
+
+#careers-hero .join-us-card .card-text {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#careers-hero .join-us-card .btn {
+  background-color: #aa0082;
+}
+
+/*--------------------------------------------------------------
+# Careers Section Head
+--------------------------------------------------------------*/
+
+.careers-section-head {
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+}
+
+.careers-section-head span {
+  color: #aa0082;
+}
+
+/*--------------------------------------------------------------
+# Careers Departments
+--------------------------------------------------------------*/
+
+#careers-departments .card .card-body {
+  display: flex;
+  align-items: flex-end;
+  height: 180px;
+}
+
+/*--------------------------------------------------------------
+# Careers Aish
+--------------------------------------------------------------*/
+
+#careers-ais p {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+/*--------------------------------------------------------------
+# Careers Values
+--------------------------------------------------------------*/
+
+#careers-values {
+  background: #ffe9fa;
+}
+
+#careers-values .values-container {
+  display: grid;
+  grid-template:
+    "title   innovate   innovate" 356px
+    "learn   learn  excellence" 356px
+    "integrity   logo   excellence" 356px
+    "integrity   people   people" 356px / 356px 356px 356px;
+  gap: 10px 10px;
+}
+
+#careers-values .values-container > * {
+  border-radius: 10px;
+}
+
+#careers-values .values-container .title {
+  grid-area: title;
+  background: #aa0082;
+  font-size: 48px;
+  line-height: 58px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#careers-values .values-container .text-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#careers-values .values-container .card-title {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 41px;
+  color: #aa0082;
+  margin-bottom: 24px;
+}
+
+#careers-values .values-container .card-text {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#careers-values .values-container .innovate {
+  grid-area: innovate;
+}
+
+#careers-values .values-container .learn {
+  grid-area: learn;
+}
+
+#careers-values .values-container .excellence {
+  grid-area: excellence;
+}
+
+#careers-values .values-container .excellence .card {
+  height: 720px;
+}
+
+#careers-values .values-container .integrity {
+  grid-area: integrity;
+}
+
+#careers-values .values-container .integrity .card {
+  height: 720px;
+}
+
+#careers-values .values-container .logo {
+  grid-area: logo;
+  background: #e8ffed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#careers-values .values-container .people {
+  grid-area: people;
+}
+
+/*--------------------------------------------------------------
+# Career Vacancies Section
+--------------------------------------------------------------*/
+
+#careers-vacancies {
+  background: #fff5e3;
+}
+
+#careers-vacancies .card {
+  height: 235px;
+}
+
+#careers-vacancies .card .btn {
+  color: #aa0082;
+  border-color: #aa0082;
 }
 
 /*--------------------------------------------------------------
