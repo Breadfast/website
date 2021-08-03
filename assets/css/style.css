@@ -1895,6 +1895,13 @@ section {
   height: 235px;
 }
 
+#careers-vacancies .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
 #careers-vacancies .card .btn {
   color: #aa0082;
   border-color: #aa0082;
