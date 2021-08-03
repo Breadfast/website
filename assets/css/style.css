@@ -1981,6 +1981,91 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Teams Hero
+--------------------------------------------------------------*/
+
+#teams-hero {
+  height: 50vh;
+  background: #c6f1d5 url("../img/hero-logo.png") repeat right top;
+  color: #202b23;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#teams-hero a {
+  background: #aa0082;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Teams Hero 2
+--------------------------------------------------------------*/
+
+#teams-hero2 {
+  width: 100vw;
+  padding: 0;
+  position: relative;
+}
+
+#teams-hero2 .join-us-card {
+  width: 32%;
+  position: absolute;
+  left: 10%;
+  top: 70.5%;
+}
+
+#teams-hero2 .join-us-card .card-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#teams-hero2 .join-us-card .card-title {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 41px;
+}
+
+#teams-hero2 .join-us-card .card-text {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#teams-hero2 .join-us-card .btn {
+  background-color: #aa0082;
+}
+
+@media (max-width: 991px) {
+  #teams-hero2 .join-us-card {
+    position: static;
+    width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+# teams Vacancies Section
+--------------------------------------------------------------*/
+
+#teams-vacancies .card {
+  height: 235px;
+}
+
+#teams-vacancies .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#teams-vacancies .card .btn {
+  color: #aa0082;
+  border-color: #aa0082;
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
