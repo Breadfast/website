@@ -1736,15 +1736,26 @@ section {
 #careers-hero {
   width: 100vw;
   padding: 0;
+  position: relative;
+}
+
+#careers-hero .hero-img-sm {
+  display: none;
 }
 
 #careers-hero .join-us-card {
-  width: 459px;
-  height: 237px;
-  padding-top: 43px;
+  width: 32%;
+  height: 40%;
   position: absolute;
-  top: 436px;
-  left: 318px;
+  left: 22.1%;
+  top: 60.5%;
+}
+
+#careers-hero .join-us-card .card-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 #careers-hero .join-us-card .card-title {
@@ -1760,6 +1771,21 @@ section {
 
 #careers-hero .join-us-card .btn {
   background-color: #aa0082;
+}
+
+@media (max-width: 991px) {
+  #careers-hero .hero-img-lg {
+    display: none;
+  }
+
+  #careers-hero .hero-img-sm {
+    display: block;
+  }
+
+  #careers-hero .join-us-card {
+    position: static;
+    width: 100%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1780,10 +1806,29 @@ section {
 # Careers Departments
 --------------------------------------------------------------*/
 
+#careers-departments .dept-container {
+  min-width: 992px;
+  overflow-x: scroll;
+}
+
+#careers-departments .mobile-only {
+  display: none;
+}
+
 #careers-departments .card .card-body {
   display: flex;
   align-items: flex-end;
   height: 180px;
+}
+
+@media (max-width: 991px) {
+  #careers-departments .mobile-only {
+    display: flex;
+  }
+
+  #careers-departments .web-only {
+    display: none !important;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1834,6 +1879,10 @@ section {
   align-items: center;
 }
 
+#careers-values .values-container .mobile-only {
+  display: none;
+}
+
 #careers-values .values-container .card-title {
   font-weight: bold;
   font-size: 34px;
@@ -1881,6 +1930,30 @@ section {
 
 #careers-values .values-container .people {
   grid-area: people;
+}
+
+@media (max-width: 991px) {
+  #careers-values .values-container {
+    grid-template:
+      "title "
+      "innovate"
+      "learn"
+      "excellence"
+      "integrity"
+      "people";
+  }
+
+  #careers-values .values-container .title {
+    height: 218px;
+  }
+
+  #careers-values .values-container .web-only {
+    display: none;
+  }
+
+  #careers-values .values-container .mobile-only {
+    display: initial;
+  }
 }
 
 /*--------------------------------------------------------------
