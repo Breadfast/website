@@ -1627,8 +1627,25 @@ section {
 
 #faqs-hero {
   height: 50vh;
-  background: #ffe9fa;
+  background: #ffe9fa url("../img/hero-logo.png") repeat right top;
   color: #143e29;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#faqs-hero h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+@media (max-width: 991px) {
+  #faqs-hero h1 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1637,6 +1654,25 @@ section {
 
 #faqs-cards {
   background: #ffffff;
+  color: #2f363c;
+}
+
+#faqs-cards .card {
+  border: none;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05),
+    0px 25px 25px rgba(0, 0, 0, 0.07);
+  padding: 32px 16px;
+}
+
+#faqs-cards .card .card-title {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 41px;
+}
+
+#faqs-cards .card .card-text {
+  font-size: 14px;
+  line-height: 21px;
   color: #2f363c;
 }
 
@@ -1656,6 +1692,154 @@ section {
 
 #faqs-cards p {
   font-size: 14px;
+}
+
+#faqs-cards .web-only {
+  display: initial;
+}
+
+#faqs-cards .mobile-only {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  #faqs-cards .web-only {
+    display: none;
+  }
+
+  #faqs-cards .mobile-only {
+    display: initial;
+  }
+
+  #faqs-cards .card .card-title {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  #faqs-cards .card .card-text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Faqs Download the app Section
+--------------------------------------------------------------*/
+#faqs-download {
+  width: 100%;
+  height: 60vh;
+  background: #ffe9fa;
+}
+
+#faqs-download .container {
+  padding-top: 72px;
+}
+
+#faqs-download h1 {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 41px;
+  color: #aa0082;
+}
+
+#faqs-download h2 {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 50px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+#faqs-download .btn-get-started {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 11px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px 0 0 0;
+  color: #fff;
+  background: #47b2e4;
+}
+
+#faqs-download .btn-get-started:hover {
+  background: #209dd8;
+}
+
+#faqs-download .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+#faqs-download .mobile-only {
+  display: none;
+}
+
+#faqs-download .web-only {
+  display: initial;
+}
+
+@media (max-width: 991px) {
+  #faqs-download {
+    height: 100vh;
+    /* text-align: center; */
+  }
+  #faqs-download .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+  #faqs-download .download-img {
+    text-align: center;
+  }
+
+  #faqs-download .download-logo {
+    display: none;
+  }
+
+  #faqs-download .mobile-only {
+    display: initial;
+  }
+
+  #faqs-download .web-only {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #download h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #download h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  #download .download-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  #download .download-img img {
+    width: 80%;
+  }
+  #download .btn-get-started {
+    font-size: 16px;
+    padding: 10px 24px 11px 24px;
+  }
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
 /*--------------------------------------------------------------
