@@ -2072,6 +2072,21 @@ section {
 }
 
 @media (max-width: 991px) {
+  .mobile-departments {
+    width: 1440px;
+  }
+
+  .mobile-departments > .row {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 1440px;
+  }
+
+  .mobile-departments > .row > .col-2 {
+    display: inline-block;
+  }
+
   #careers-departments .dept-container > .row {
     display: block;
     overflow-x: auto;
