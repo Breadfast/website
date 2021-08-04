@@ -1,15 +1,28 @@
-/**
-* Template Name: Arsha - v4.3.0
-* Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+  font-family: Faro;
+  src: url(../fonts/FaroWebTrial-BoldLucky.woff2) format("woff2"),
+    url(../fonts/FaroWebTrial-BoldLucky.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000d-fb04;
+}
+@font-face {
+  font-family: Faro;
+  src: url(../fonts/FaroWebTrial-DisplayLucky.woff2) format("woff2"),
+    url(../fonts/FaroWebTrial-DisplayLucky.woff) format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000d-fb04;
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
+
   color: #444444;
 }
 
@@ -29,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Jost", sans-serif;
+  font-family: Faro;
 }
 
 .hr-theme {
@@ -1749,6 +1762,7 @@ section {
   position: absolute;
   left: 22.1%;
   top: 60.5%;
+  border: none;
 }
 
 #careers-hero .join-us-card .card-body {
@@ -1759,7 +1773,7 @@ section {
 }
 
 #careers-hero .join-us-card .card-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 34px;
   line-height: 41px;
 }
@@ -1771,6 +1785,8 @@ section {
 
 #careers-hero .join-us-card .btn {
   background-color: #aa0082;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 @media (max-width: 991px) {
@@ -1786,6 +1802,22 @@ section {
     position: static;
     width: 100%;
   }
+  #careers-hero .join-us-card .btn {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  #careers-hero .join-us-card .card-title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 41px;
+  }
+
+  #careers-hero .join-us-card .card-text {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1793,7 +1825,7 @@ section {
 --------------------------------------------------------------*/
 
 .careers-section-head {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 48px;
   text-align: center;
 }
@@ -1802,13 +1834,18 @@ section {
   color: #aa0082;
 }
 
+@media (max-width: 991px) {
+  .careers-section-head {
+    font-size: 34px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Careers Departments
 --------------------------------------------------------------*/
 
 #careers-departments .dept-container {
   min-width: 992px;
-  overflow-x: scroll;
 }
 
 #careers-departments .mobile-only {
@@ -1821,13 +1858,34 @@ section {
   height: 180px;
 }
 
+#careers-departments .card .card-body .card-title {
+  font-weight: 800;
+  font-size: 24px;
+}
+
 @media (max-width: 991px) {
+  #careers-departments .dept-container > .row {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  #careers-departments .dept-container > .row .col-lg-3,
+  #careers-departments .dept-container > .row .col-2 {
+    display: inline-block;
+  }
+
   #careers-departments .mobile-only {
     display: flex;
   }
 
   #careers-departments .web-only {
     display: none !important;
+  }
+
+  #careers-departments .card .card-body .card-title {
+    font-weight: 800;
+    font-size: 20px;
   }
 }
 
@@ -2213,4 +2271,33 @@ section {
   #footer .credits {
     margin-top: 10px;
   }
+}
+
+/* teeeest */
+
+/* The heart of the matter */
+.testimonial-group > .row {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.testimonial-group > .row > .col-4 {
+  display: inline-block;
+}
+
+/* Decorations */
+.col-4 {
+  color: #fff;
+  font-size: 48px;
+  padding-bottom: 20px;
+  padding-top: 18px;
+}
+.col-4:nth-child(3n + 1) {
+  background: #c69;
+}
+.col-4:nth-child(3n + 2) {
+  background: #9c6;
+}
+.col-4:nth-child(3n + 3) {
+  background: #69c;
 }
