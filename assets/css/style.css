@@ -625,18 +625,6 @@ h6 {
   background-position: bottom 80px right 100px;
 }
 
-/* .home-hero-img::before {
-  background: linear-gradient(180deg, #fff3dd 0%, #ffe3b8 100%);
-  content: "";
-  position: absolute;
-  bottom: 88px;
-  left: 88px;
-  width: 300px;
-  height: 300px;
-  z-index: -1;
-  border-radius: 50%;
-} */
-
 #home-hero {
   padding-bottom: 0px;
 }
@@ -975,10 +963,6 @@ section {
 .method:hover {
   transform: translateY(-10px);
 }
-
-/* .method .method-info {
-  padding-left: 30px;
-} */
 
 .method h4 {
   font-weight: 800;
