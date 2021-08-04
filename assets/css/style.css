@@ -1589,6 +1589,16 @@ section {
   margin-top: 72px;
 }
 
+.breadcrumbs li {
+  font-size: 16px;
+}
+
+.breadcrumbs a {
+  font-weight: bold;
+  font-size: 18px;
+  color: #2f363c;
+}
+
 @media (max-width: 992px) {
   .breadcrumbs {
     margin-top: 68px;
@@ -1785,7 +1795,6 @@ section {
 @media (max-width: 991px) {
   #faqs-download {
     height: 100vh;
-    /* text-align: center; */
   }
   #faqs-download .animated {
     -webkit-animation: none;
@@ -2309,6 +2318,30 @@ section {
 #teams-hero a {
   background: #aa0082;
   color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#teams-hero h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  #teams-hero a {
+    background: #aa0082;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  #teams-hero h1 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -2363,6 +2396,10 @@ section {
 
 #teams-vacancies .card {
   height: 235px;
+  border: none;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05),
+    0px 25px 25px rgba(0, 0, 0, 0.07);
+  padding: 32px 16px;
 }
 
 #teams-vacancies .card .card-body {
@@ -2375,6 +2412,24 @@ section {
 #teams-vacancies .card .btn {
   color: #aa0082;
   border-color: #aa0082;
+}
+
+#careers-vacancies .card .card-body .text-muted {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#careers-vacancies .card .card-body .card-title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+#careers-vacancies .card .card-body .card-text {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 /*--------------------------------------------------------------
