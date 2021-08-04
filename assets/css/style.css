@@ -143,6 +143,34 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# utilities 
+--------------------------------------------------------------*/
+
+.h-100 {
+  height: 100%;
+}
+
+.b-0 {
+  border: 0;
+}
+
+.box-shadow {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.round-16 {
+  border-radius: 16px;
+}
+
+.max-width-540 {
+  max-width: 540px;
+}
+
+.card-border-radius {
+  border-radius: 20px 20px 0px 0px;
+}
+
+/*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
 #preloader {
@@ -377,6 +405,71 @@ h6 {
   visibility: visible;
 }
 
+/* tooltip */
+[data-tooltip][aria-label] {
+  position: relative;
+}
+
+[data-tooltip][aria-label]::before {
+  content: attr(aria-label);
+  pointer-events: none;
+  white-space: pre;
+  position: absolute;
+  background: #fff;
+  padding: 0.3rem 2rem;
+  border-radius: 0.3rem;
+  border: 1px solid #aa0082;
+  opacity: 0;
+  visibility: none;
+}
+
+[data-tooltip][aria-label]::after {
+  content: "";
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-color: #aa0082;
+  border-width: 0;
+  border-style: solid;
+  opacity: 0;
+  visibility: none;
+}
+
+[data-tooltip^="down"][aria-label]::before {
+  top: calc(0.5rem + 100%);
+  right: 50%;
+  transform: translateX(50%);
+}
+[data-tooltip^="down"][aria-label]::after {
+  border-bottom-width: 0.5rem;
+  border-right-width: 0.5rem;
+  border-right-color: #0000;
+  border-left-width: 0.5rem;
+  border-left-color: #0000;
+  top: 100%;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+[data-tooltip][aria-label]:hover::before,
+[data-tooltip][aria-label]:hover::after {
+  visibility: visible;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+
+/* wrapper setup */
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -500,6 +593,7 @@ h6 {
 
 #home-hero .container {
   padding-top: 72px;
+  height: 100%;
 }
 
 #home-hero h1 {
@@ -526,6 +620,27 @@ h6 {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+.home-hero-img {
+  background: url("../img/ellipse.png") no-repeat center;
+  background-position: bottom 80px right 100px;
+}
+
+/* .home-hero-img::before {
+  background: linear-gradient(180deg, #fff3dd 0%, #ffe3b8 100%);
+  content: "";
+  position: absolute;
+  bottom: 88px;
+  left: 88px;
+  width: 300px;
+  height: 300px;
+  z-index: -1;
+  border-radius: 50%;
+} */
+
+#home-hero {
+  padding-bottom: 0px;
+}
+
 @media (max-width: 991px) {
   #home-hero {
     height: 100vh;
@@ -537,6 +652,7 @@ h6 {
   }
   #home-hero .home-hero-img {
     text-align: center;
+    background-position: center;
   }
   #home-hero .home-hero-img img {
     width: 50%;
@@ -1099,7 +1215,7 @@ section {
 --------------------------------------------------------------*/
 #download {
   width: 100%;
-  height: 80vh;
+  padding-bottom: 0;
   background: #ffe9fa;
 }
 
