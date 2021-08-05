@@ -1857,23 +1857,43 @@ section {
 
 #contact-us-hero {
   height: 50vh;
-  background: #e8ffed;
+  background: #e8ffed url("../img/hero-logo.png") repeat right top;
   color: #143e29;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#contact-us-hero h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+@media (max-width: 991px) {
+  #contact-us-hero h1 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+  }
 }
 
 /*--------------------------------------------------------------
 # Contact-us Body
 --------------------------------------------------------------*/
 
-#contact-us-body {
-  padding: 30px;
-}
+/* #contact-us-body {
+  padding: 40px;
+} */
 
 #contact-us-body .card {
   margin: 10px;
   width: 486px;
-  padding-left: 20px;
-  padding-right: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05),
+    0px 25px 25px rgba(0, 0, 0, 0.07);
+  border-radius: 16px;
+  border: none;
+  padding: 10px 40px;
 }
 
 #contact-us-body .card-title {
@@ -1891,7 +1911,7 @@ section {
   font-weight: bold;
 }
 
-#contact-us-body .social-links a {
+/* #contact-us-body .social-links a {
   display: inline-block;
   background: #fff;
   color: #aa0082;
@@ -1903,7 +1923,7 @@ section {
   width: 32px;
   height: 32px;
   border: 1px solid #aa0082;
-}
+} */
 
 /*--------------------------------------------------------------
 # Covid hero
