@@ -2071,20 +2071,24 @@ section {
   color: #2f363c;
 }
 
+.myRow {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+}
+.myRow > div {
+  margin: 0 30px;
+}
+
 @media (max-width: 991px) {
   .mobile-departments {
-    width: 1440px;
-  }
-
-  .mobile-departments > .row {
-    display: block;
+    display: flex;
+    flex-direction: row;
     overflow-x: auto;
-    white-space: nowrap;
-    width: 1440px;
   }
 
-  .mobile-departments > .row > .col-2 {
-    display: inline-block;
+  .mobile-departments > div {
+    margin: 0 5px;
   }
 
   #careers-departments .dept-container > .row {
@@ -2179,6 +2183,11 @@ section {
   display: none;
 }
 
+#careers-values .values-container .card {
+  border: none;
+  overflow: hidden;
+}
+
 #careers-values .values-container .card-title {
   font-weight: bold;
   font-size: 34px;
@@ -2237,6 +2246,15 @@ section {
       "excellence"
       "integrity"
       "people";
+  }
+
+  #careers-values .values-container .integrity .card,
+  #careers-values .values-container .excellence .card {
+    height: initial;
+  }
+
+  #careers-values .values-container .text-content {
+    display: initial;
   }
 
   #careers-values .values-container .title {
@@ -2595,33 +2613,4 @@ section {
   #footer .credits {
     margin-top: 10px;
   }
-}
-
-/* teeeest */
-
-/* The heart of the matter */
-.testimonial-group > .row {
-  display: block;
-  overflow-x: auto;
-  white-space: nowrap;
-}
-.testimonial-group > .row > .col-4 {
-  display: inline-block;
-}
-
-/* Decorations */
-.col-4 {
-  color: #fff;
-  font-size: 48px;
-  padding-bottom: 20px;
-  padding-top: 18px;
-}
-.col-4:nth-child(3n + 1) {
-  background: #c69;
-}
-.col-4:nth-child(3n + 2) {
-  background: #9c6;
-}
-.col-4:nth-child(3n + 3) {
-  background: #69c;
 }
