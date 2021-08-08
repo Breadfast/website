@@ -1,15 +1,28 @@
-/**
-* Template Name: Arsha - v4.3.0
-* Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+  font-family: Faro;
+  src: url(../fonts/FaroWebTrial-BoldLucky.woff2) format("woff2"),
+    url(../fonts/FaroWebTrial-BoldLucky.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000d-fb04;
+}
+@font-face {
+  font-family: Faro;
+  src: url(../fonts/FaroWebTrial-DisplayLucky.woff2) format("woff2"),
+    url(../fonts/FaroWebTrial-DisplayLucky.woff) format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000d-fb04;
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
+
   color: #444444;
 }
 
@@ -29,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Jost", sans-serif;
+  font-family: Faro;
 }
 
 .hr-theme {
@@ -140,6 +153,10 @@ h6 {
 .general-ops-line {
   border-left: 6px solid #e3ffcd;
   padding: 10px 16px 1px 16px;
+}
+
+.card {
+  border-radius: 16px;
 }
 
 /*--------------------------------------------------------------
@@ -1672,6 +1689,16 @@ section {
   margin-top: 72px;
 }
 
+.breadcrumbs li {
+  font-size: 16px;
+}
+
+.breadcrumbs a {
+  font-weight: bold;
+  font-size: 18px;
+  color: #2f363c;
+}
+
 @media (max-width: 992px) {
   .breadcrumbs {
     margin-top: 68px;
@@ -1710,8 +1737,25 @@ section {
 
 #faqs-hero {
   height: 50vh;
-  background: #ffe9fa;
+  background: #ffe9fa url("../img/hero-logo.png") repeat right top;
   color: #143e29;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#faqs-hero h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+@media (max-width: 991px) {
+  #faqs-hero h1 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1720,6 +1764,25 @@ section {
 
 #faqs-cards {
   background: #ffffff;
+  color: #2f363c;
+}
+
+#faqs-cards .card {
+  border: none;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05),
+    0px 25px 25px rgba(0, 0, 0, 0.07);
+  padding: 32px 16px;
+}
+
+#faqs-cards .card .card-title {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 41px;
+}
+
+#faqs-cards .card .card-text {
+  font-size: 14px;
+  line-height: 21px;
   color: #2f363c;
 }
 
@@ -1741,29 +1804,196 @@ section {
   font-size: 14px;
 }
 
+#faqs-cards .web-only {
+  display: initial;
+}
+
+#faqs-cards .mobile-only {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  #faqs-cards .web-only {
+    display: none;
+  }
+
+  #faqs-cards .mobile-only {
+    display: initial;
+  }
+
+  #faqs-cards .card .card-title {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  #faqs-cards .card .card-text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Faqs Download the app Section
+--------------------------------------------------------------*/
+#faqs-download {
+  width: 100%;
+  height: 60vh;
+  background: #ffe9fa;
+}
+
+#faqs-download .container {
+  padding-top: 72px;
+}
+
+#faqs-download h1 {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 41px;
+  color: #aa0082;
+}
+
+#faqs-download h2 {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 50px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+#faqs-download .btn-get-started {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 11px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px 0 0 0;
+  color: #fff;
+  background: #47b2e4;
+}
+
+#faqs-download .btn-get-started:hover {
+  background: #209dd8;
+}
+
+#faqs-download .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+#faqs-download .mobile-only {
+  display: none;
+}
+
+#faqs-download .web-only {
+  display: initial;
+}
+
+@media (max-width: 991px) {
+  #faqs-download {
+    height: 100vh;
+  }
+  #faqs-download .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+  #faqs-download .download-img {
+    text-align: center;
+  }
+
+  #faqs-download .download-logo {
+    display: none;
+  }
+
+  #faqs-download .mobile-only {
+    display: initial;
+  }
+
+  #faqs-download .web-only {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #download h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #download h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  #download .download-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  #download .download-img img {
+    width: 80%;
+  }
+  #download .btn-get-started {
+    font-size: 16px;
+    padding: 10px 24px 11px 24px;
+  }
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
 /*--------------------------------------------------------------
 # Contact-us Hero
 --------------------------------------------------------------*/
 
 #contact-us-hero {
   height: 50vh;
-  background: #e8ffed;
+  background: #e8ffed url("../img/hero-logo.png") repeat right top;
   color: #143e29;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#contact-us-hero h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+@media (max-width: 991px) {
+  #contact-us-hero h1 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+  }
 }
 
 /*--------------------------------------------------------------
 # Contact-us Body
 --------------------------------------------------------------*/
 
-#contact-us-body {
-  padding: 30px;
-}
+/* #contact-us-body {
+  padding: 40px;
+} */
 
 #contact-us-body .card {
   margin: 10px;
   width: 486px;
-  padding-left: 20px;
-  padding-right: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05),
+    0px 25px 25px rgba(0, 0, 0, 0.07);
+  border-radius: 16px;
+  border: none;
+  padding: 10px 40px;
 }
 
 #contact-us-body .card-title {
@@ -1781,7 +2011,7 @@ section {
   font-weight: bold;
 }
 
-#contact-us-body .social-links a {
+/* #contact-us-body .social-links a {
   display: inline-block;
   background: #fff;
   color: #aa0082;
@@ -1793,13 +2023,31 @@ section {
   width: 32px;
   height: 32px;
   border: 1px solid #aa0082;
-}
+} */
 
 /*--------------------------------------------------------------
 # Covid hero
 --------------------------------------------------------------*/
 #covid-hero {
   padding: 0;
+}
+
+#covid-hero .mobile-only {
+  display: none;
+}
+
+#covid-hero .web-only {
+  display: initial;
+}
+
+@media (max-width: 991px) {
+  #covid-hero .web-only {
+    display: none;
+  }
+
+  #covid-hero .mobile-only {
+    display: initial;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1819,14 +2067,96 @@ section {
   text-align: center;
 }
 
+@media (max-width: 991px) {
+  #covid-description p {
+    text-align: justify;
+  }
+}
+
 /*--------------------------------------------------------------
-# Job description Hero
+# COVID Cards 
 --------------------------------------------------------------*/
 
-#job-description-hero {
-  height: 50vh;
-  background: #e8ffed;
-  color: #143e29;
+#covid-cards {
+  background: #ffffff;
+  color: #2f363c;
+}
+
+#covid-cards .card {
+  border: none;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05),
+    0px 25px 25px rgba(0, 0, 0, 0.07);
+  padding: 32px 16px;
+}
+
+#covid-cards .card .card-title {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 41px;
+}
+
+#covid-cards .card .card-text {
+  font-size: 14px;
+  line-height: 21px;
+  color: #2f363c;
+}
+
+#covid-cards .q-circle {
+  background: #ffe9fa;
+  color: #aa0082;
+  padding: 5px 16px;
+  border-radius: 50%;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+#covid-cards h5 {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+#covid-cards p {
+  font-size: 14px;
+}
+
+#covid-cards .web-only {
+  display: initial;
+}
+
+#covid-cards .mobile-only {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  #covid-cards .web-only {
+    display: none;
+  }
+
+  #covid-cards .mobile-only {
+    display: initial;
+  }
+
+  #covid-cards .card .card-title {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  #covid-cards .card .card-text {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: justify;
+  }
+}
+
+/*--------------------------------------------------------------
+# Job description details
+--------------------------------------------------------------*/
+
+#job-description-details .card {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05),
+    0px 25px 25px rgba(0, 0, 0, 0.07);
+  border: none;
 }
 
 /*--------------------------------------------------------------
@@ -1849,6 +2179,7 @@ section {
   position: absolute;
   left: 22.1%;
   top: 60.5%;
+  border: none;
 }
 
 #careers-hero .join-us-card .card-body {
@@ -1859,7 +2190,7 @@ section {
 }
 
 #careers-hero .join-us-card .card-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 34px;
   line-height: 41px;
 }
@@ -1871,6 +2202,8 @@ section {
 
 #careers-hero .join-us-card .btn {
   background-color: #aa0082;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 @media (max-width: 991px) {
@@ -1886,6 +2219,22 @@ section {
     position: static;
     width: 100%;
   }
+  #careers-hero .join-us-card .btn {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  #careers-hero .join-us-card .card-title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 41px;
+  }
+
+  #careers-hero .join-us-card .card-text {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1893,7 +2242,7 @@ section {
 --------------------------------------------------------------*/
 
 .careers-section-head {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 48px;
   text-align: center;
 }
@@ -1902,17 +2251,27 @@ section {
   color: #aa0082;
 }
 
+@media (max-width: 991px) {
+  .careers-section-head {
+    font-size: 34px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Careers Departments
 --------------------------------------------------------------*/
 
 #careers-departments .dept-container {
   min-width: 992px;
-  overflow-x: scroll;
 }
 
 #careers-departments .mobile-only {
   display: none;
+}
+
+#careers-departments .card {
+  min-width: 222px;
+  border: none;
 }
 
 #careers-departments .card .card-body {
@@ -1921,7 +2280,47 @@ section {
   height: 180px;
 }
 
+#careers-departments .card .card-body .card-title {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+#careers-departments .card .card-body .card-text {
+  font-size: 18px;
+  line-height: 32px;
+  color: #2f363c;
+}
+
+.myRow {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+}
+.myRow > div {
+  margin: 0 30px;
+}
+
 @media (max-width: 991px) {
+  .mobile-departments {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .mobile-departments > div {
+    margin: 0 5px;
+  }
+
+  #careers-departments .dept-container > .row {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  #careers-departments .dept-container > .row .col-12 {
+    display: inline-block;
+  }
+
   #careers-departments .mobile-only {
     display: flex;
   }
@@ -1929,15 +2328,36 @@ section {
   #careers-departments .web-only {
     display: none !important;
   }
+
+  #careers-departments .card .card-body .card-title {
+    font-weight: 800;
+    font-size: 20px;
+  }
+
+  #careers-departments .replacement-p {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: justify;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
 
 /*--------------------------------------------------------------
 # Careers Aish
 --------------------------------------------------------------*/
 
-#careers-ais p {
+#careers-aish p {
   font-size: 18px;
   line-height: 32px;
+}
+
+@media (max-width: 991px) {
+  #careers-aish p {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: justify;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1981,6 +2401,11 @@ section {
 
 #careers-values .values-container .mobile-only {
   display: none;
+}
+
+#careers-values .values-container .card {
+  border: none;
+  overflow: hidden;
 }
 
 #careers-values .values-container .card-title {
@@ -2043,6 +2468,15 @@ section {
       "people";
   }
 
+  #careers-values .values-container .integrity .card,
+  #careers-values .values-container .excellence .card {
+    height: initial;
+  }
+
+  #careers-values .values-container .text-content {
+    display: initial;
+  }
+
   #careers-values .values-container .title {
     height: 218px;
   }
@@ -2075,9 +2509,49 @@ section {
   align-items: flex-start;
 }
 
+#careers-vacancies .card .card-body .text-muted {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#careers-vacancies .card .card-body .card-title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+#careers-vacancies .card .card-body .card-text {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
 #careers-vacancies .card .btn {
   color: #aa0082;
   border-color: #aa0082;
+}
+
+#careers-vacancies .card .btn:hover {
+  color: #fff;
+  border-color: #aa0082;
+  background-color: #aa0082;
+}
+
+@media (max-width: 991px) {
+  #careers-vacancies .card .card-body .text-muted {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  #careers-vacancies .card .card-body .card-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  #careers-vacancies .card .card-body .card-text {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -2097,6 +2571,30 @@ section {
 #teams-hero a {
   background: #aa0082;
   color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#teams-hero h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  #teams-hero a {
+    background: #aa0082;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  #teams-hero h1 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -2151,6 +2649,10 @@ section {
 
 #teams-vacancies .card {
   height: 235px;
+  border: none;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05),
+    0px 25px 25px rgba(0, 0, 0, 0.07);
+  padding: 32px 16px;
 }
 
 #teams-vacancies .card .card-body {
@@ -2163,6 +2665,24 @@ section {
 #teams-vacancies .card .btn {
   color: #aa0082;
   border-color: #aa0082;
+}
+
+#careers-vacancies .card .card-body .text-muted {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#careers-vacancies .card .card-body .card-title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+#careers-vacancies .card .card-body .card-text {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 /*--------------------------------------------------------------
