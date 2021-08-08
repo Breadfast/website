@@ -98,9 +98,12 @@
         class="d-flex align-items-center justify-content-center"
       >
         <div class="container">
-          <div class="row row-cols-1 row-cols-lg-2 g-4">
-            <div class="col">
-              <div class="card mb-3" style="max-width: 540px">
+          <div
+            class="row justify-content-center row-cols-1 row-cols-lg-2"
+            data-masonry='{"percentPosition": true }'
+          >
+            <div class="col g-4">
+              <div class="card mb-3">
                 <div class="row g-0">
                   <div class="col-lg-2">
                     <div class="card-body">
@@ -135,8 +138,8 @@
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card mb-3" style="max-width: 540px">
+            <div class="col g-4">
+              <div class="card mb-3">
                 <div class="row g-0">
                   <div class="col-lg-2">
                     <div class="card-body">
@@ -171,8 +174,8 @@
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card mb-3" style="max-width: 540px">
+            <div class="col g-4">
+              <div class="card mb-3">
                 <div class="row g-0">
                   <div class="col-lg-2">
                     <div class="card-body">
@@ -205,8 +208,8 @@
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card mb-3" style="max-width: 540px">
+            <div class="col g-4">
+              <div class="card mb-3">
                 <div class="row g-0">
                   <div class="col-lg-2">
                     <div class="card-body">
@@ -245,10 +248,17 @@
       <!-- End FAQs Cards Section -->
 
       <!-- ======= FAQs Download the app Section ======= -->
-      <section id="faqs-download" class="d-flex align-items-center">
+      <section
+        id="faqs-download"
+        class="
+          d-flex
+          align-items-center align-items-lg-end
+          justify-content-center
+        "
+      >
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 order-1 order-lg-1 download-img">
+            <div class="col-lg-6 download-img">
               <img
                 src="assets/img/home/download-img.png"
                 class="img-fluid web-only"
@@ -259,17 +269,10 @@
                 class="img-fluid mobile-only"
                 alt=""
               />
+              <div class="gradient"></div>
             </div>
-            <div
-              class="
-                col-lg-6
-                d-flex
-                flex-column
-                justify-content-center
-                pt-4 pt-lg-0
-                order-2 order-lg-2
-              "
-            >
+
+            <div class="col-lg-6 pt-4 pt-lg-0 download-text">
               <div class="download-logo">
                 <img
                   src="assets/img/home/download-logo.png"
@@ -291,36 +294,36 @@
                   class="lh-1"
                 >
                   <img
-                    src="assets/img/home/google-play.png"
+                    src="assets/img/home/google-play.svg"
                     alt="Google Play"
                     class="web-only"
                   />
                   <img
-                    src="assets/img/home/google-play-mobile.png"
+                    src="assets/img/home/google-play-mobile.svg"
                     alt="Google Play"
                     class="mobile-only"
                   />
                 </a>
                 <a href="https://apps.apple.com/eg/app/breadfast/id1288436997">
                   <img
-                    src="assets/img/home/app-store.png"
+                    src="assets/img/home/app-store.svg"
                     alt="App Store"
                     class="web-only"
                   />
                   <img
-                    src="assets/img/home/app-store-mobile.png"
+                    src="assets/img/home/app-store-mobile.svg"
                     alt="App Store"
                     class="mobile-only"
                   />
                 </a>
                 <a href="https://appgallery.huawei.com/#/app/C102125829">
                   <img
-                    src="assets/img/home/app-gallery.png"
+                    src="assets/img/home/app-gallery.svg"
                     alt="App Gallery"
                     class="web-only"
                   />
                   <img
-                    src="assets/img/home/app-store-mobile.png"
+                    src="assets/img/home/app-gallery-mobile.svg"
                     alt="App Store"
                     class="mobile-only"
                   />
@@ -394,13 +397,13 @@
                 <a
                   href="https://play.google.com/store/apps/details?id=com.breadfast"
                   class="lh-1"
-                  ><img src="assets/img/home/google-play.png" alt="Google Play"
+                  ><img src="assets/img/home/google-play.svg" alt="Google Play"
                 /></a>
                 <a href="https://apps.apple.com/eg/app/breadfast/id1288436997"
-                  ><img src="assets/img/home/app-store.png" alt="App Store"
+                  ><img src="assets/img/home/app-store.svg" alt="App Store"
                 /></a>
                 <a href="https://appgallery.huawei.com/#/app/C102125829"
-                  ><img src="assets/img/home/app-gallery.png" alt="App Gallery"
+                  ><img src="assets/img/home/app-gallery.svg" alt="App Gallery"
                 /></a>
               </div>
             </div>
@@ -426,6 +429,12 @@
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
