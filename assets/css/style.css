@@ -22,7 +22,6 @@
 
 body {
   font-family: "Work Sans", sans-serif;
-
   color: #444444;
 }
 
@@ -235,39 +234,6 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
-  background: #47b2e4;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  transition: all 0.4s;
-}
-
-.back-to-top i {
-  font-size: 24px;
-  color: #fff;
-  line-height: 0;
-}
-
-.back-to-top:hover {
-  background: #6bc1e9;
-  color: #fff;
-}
-
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-/*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
@@ -276,8 +242,11 @@ h6 {
   padding: 15px 0;
 }
 
-#header.header-scrolled,
-#header.header-inner-pages {
+#header.header-home-page {
+  background: #edffef;
+}
+
+#header.header-inner-page {
   background: #fff;
 }
 
@@ -2832,5 +2801,27 @@ section {
 
   #footer .credits {
     margin-top: 10px;
+  }
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+.mobile-only {
+  display: none;
+}
+
+.web-only {
+  display: initial;
+}
+
+@media (max-width: 991px) {
+  .mobile-only {
+    display: initial;
+  }
+
+  .web-only {
+    display: none;
   }
 }
