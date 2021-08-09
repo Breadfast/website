@@ -300,10 +300,21 @@ h6 {
   display: flex;
   list-style: none;
   align-items: center;
+  position: relative;
 }
 
 .navbar li {
   position: relative;
+}
+
+.navbar li.hiring-announcement {
+  position: relative;
+  transform: translate(70%, 60%);
+}
+
+.navbar li.hiring-announcement .hiring-text {
+  position: relative;
+  transform: translate(-115%, 15%);
 }
 
 .navbar a,
@@ -327,10 +338,10 @@ h6 {
   margin-left: 5px;
 }
 
-.navbar:not(.navbar-mobile) a:hover,
-.navbar:not(.navbar-mobile) .active,
-.navbar:not(.navbar-mobile) .active:focus,
-.navbar:not(.navbar-mobile) li:hover > a {
+.navbar:not(.navbar-mobile) li:not(.hiring-announcement) a:hover,
+.navbar:not(.navbar-mobile) li:not(.hiring-announcement) .active,
+.navbar:not(.navbar-mobile) li:not(.hiring-announcement) .active:focus,
+.navbar:not(.navbar-mobile) li:hover:not(.hiring-announcement) > a {
   font-weight: bold;
   color: #2f363c;
   border-bottom-style: solid;
@@ -537,11 +548,11 @@ h6 {
   color: #37517e;
 }
 
-.navbar-mobile a:hover,
+/* .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
   color: #47b2e4;
-}
+} */
 
 .navbar-mobile .dropdown ul {
   position: static;
@@ -1508,7 +1519,7 @@ section {
   padding-left: 60px;
 }
 
-.contact .info .social-links a {
+/* .contact .info .social-links a {
   font-size: 18px;
   display: inline-block;
   background: #333;
@@ -1521,7 +1532,7 @@ section {
   height: 36px;
   transition: 0.3s;
   margin-right: 10px;
-}
+} */
 
 .contact .info .social-links a:hover {
   background: #47b2e4;
@@ -2001,7 +2012,7 @@ section {
   font-weight: bold;
 }
 
-/* #contact-us-body .social-links a {
+#contact-us-body .social-links a {
   display: inline-block;
   background: #fff;
   color: #aa0082;
@@ -2013,7 +2024,7 @@ section {
   width: 32px;
   height: 32px;
   border: 1px solid #aa0082;
-} */
+}
 
 /*--------------------------------------------------------------
 # Covid hero
@@ -2773,26 +2784,20 @@ section {
   color: #47b2e4;
 }
 
-#footer .footer-top .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #fff;
-  color: #383838;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
+/* #footer .footer-top .social-links {
+  display: flex;
+  justify-content: space-between;
+} */
 
+#footer .footer-top .social-links a {
+  margin-right: 10px;
+}
+/* 
 #footer .footer-top .social-links a:hover {
   background: #209dd8;
   color: #fff;
   text-decoration: none;
-}
+} */
 
 #footer .footer-bottom {
   padding-top: 30px;
