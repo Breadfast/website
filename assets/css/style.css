@@ -2695,6 +2695,7 @@ section {
   font-size: 14px;
   color: #fff;
   background: #383838;
+  position: relative;
 }
 
 #footer .logo {
@@ -2716,6 +2717,7 @@ section {
 #footer .footer-top {
   padding: 60px 0 30px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  min-height: 340px;
 }
 
 #footer .footer-top .footer-contact {
@@ -2748,6 +2750,13 @@ section {
 
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links .footer-elipse {
+  position: absolute;
+  /* transform: translate(-6%, -18%); */
+  top: 0%;
+  right: 0%;
 }
 
 #footer .footer-top .footer-links ul {
