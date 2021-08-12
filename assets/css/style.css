@@ -613,7 +613,7 @@ h6 {
   background: #edffef;
   padding-right: 165px;
   padding-left: 165px;
-  min-height: 500px;
+  min-height: 700px;
 }
 
 #home-hero .container {
@@ -622,6 +622,9 @@ h6 {
 }
 
 #home-hero .hero-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 
@@ -646,7 +649,8 @@ h6 {
   z-index: 200;
   height: 34px;
   position: absolute;
-  bottom: 0px;
+  bottom: -2px;
+  left: 0;
   width: 100%;
 }
 
@@ -1302,6 +1306,7 @@ section {
 @media (max-width: 991px) {
   #download {
     height: 100vh;
+
     /* text-align: center; */
   }
   #download .animated {
@@ -1915,7 +1920,7 @@ section {
 --------------------------------------------------------------*/
 #faqs-download {
   width: 100%;
-  height: 55vh;
+  min-height: 400px;
   background: #ffe9fa;
   padding: 0 165px;
 }
@@ -1982,7 +1987,6 @@ section {
 
 @media (max-width: 991px) {
   #faqs-download {
-    height: 100vh;
     padding-left: 16px;
     padding-right: 16px;
   }
