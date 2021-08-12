@@ -610,12 +610,15 @@ h6 {
 --------------------------------------------------------------*/
 #home-hero {
   width: 100%;
-  height: 80vh;
   background: #edffef;
+  padding-right: 165px;
+  padding-left: 165px;
+  min-height: 500px;
 }
 
 #home-hero .container {
   height: 100%;
+  padding: 0;
 }
 
 #home-hero .hero-img-container {
@@ -673,10 +676,6 @@ h6 {
   font-size: 24px;
 }
 
-#home-hero .animated {
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
-}
-
 #home-hero {
   padding-bottom: 0px;
 }
@@ -685,6 +684,8 @@ h6 {
   #home-hero {
     text-align: center;
     height: auto;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   #home-hero .hero-img-container {
@@ -846,6 +847,26 @@ section {
   box-shadow: inset 0 3 10px #fff;
 }
 
+.dynamic-img-container {
+  transition: all 0.1s ease;
+}
+
+@-webkit-keyframes translateinfinite {
+  100% {
+    transform: translateX(calc(-54px * 1));
+  }
+}
+@keyframes translateinfinite {
+  100% {
+    transform: translateX(calc(-54px * 1));
+  }
+}
+
+.dynamic-img-container .card {
+  -webkit-animation: translateinfinite 1s linear infinite;
+  animation: translateinfinite 1s linear infinite;
+}
+
 .top-gradient {
   position: absolute;
   width: 100%;
@@ -935,39 +956,28 @@ section {
 #how {
   width: 100%;
   background-color: rgba(255, 232, 196, 0.6);
-  /* height: 100vh; */
+  padding-left: 165px;
+  padding-right: 165px;
+}
+
+#how .container {
+  padding: 0;
 }
 
 #how .container .how-img {
   position: relative;
+  padding: 0;
 }
 
-#how .container .how-img .how-elipse {
-  position: absolute;
-  bottom: 5%;
-  right: -2%;
+#how .container .methods-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
 }
 
 #how .middle-method {
   transform: translate(5%);
-}
-
-#how .container .how-img .delivery-man {
-  position: absolute;
-  bottom: 5%;
-}
-
-#how .container .how-img .gradient {
-  background: linear-gradient(
-    180deg,
-    rgba(253, 242, 222, 0) 0%,
-    #fdf2de 91.79%
-  );
-  z-index: 200;
-  height: 69px;
-  position: absolute;
-  bottom: 5%;
-  width: 100%;
 }
 
 #how h1 {
@@ -984,45 +994,40 @@ section {
   font-size: 24px;
 }
 
-#how .btn-get-started {
-  font-family: "Jost", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 28px 11px 28px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px 0 0 0;
-  color: #fff;
-  background: #47b2e4;
-}
-
-#how .btn-get-started:hover {
-  background: #209dd8;
-}
-
 .method {
-  position: relative;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 20px 24px 0 50px;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(235, 212, 170, 0.25),
+    0px 25px 25px rgba(235, 212, 170, 0.5);
   border-radius: 16px;
-  background: #fff;
-  transition: 0.5s;
-  margin: 20px;
+  padding-top: 15px;
+  padding-right: 10px;
+  border-radius: 16px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.method > * {
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+.method .pic,
+.method .dot {
+  transform: translateY(-5px);
+}
+
+.method .line {
+  position: absolute;
+  transform: translateX(-90%);
+  z-index: -1;
 }
 
 .method .pic {
   overflow: hidden;
-  width: 180px;
-}
-
-.method .pic img {
-  transition: ease-in-out 0.3s;
-}
-
-.method:hover {
-  transform: translateY(-10px);
+  width: 160px;
 }
 
 .method h4 {
@@ -1038,69 +1043,10 @@ section {
   color: #2f363c;
 }
 
-.method span {
-  display: block;
-  font-size: 15px;
-  padding-bottom: 10px;
-  position: relative;
-  font-weight: 500;
-}
-
-.method span::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 1px;
-  background: #cbd6e9;
-  bottom: 0;
-  left: 0;
-}
-
-.method .social {
-  margin-top: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.method .social a {
-  transition: ease-in-out 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-  width: 32px;
-  height: 32px;
-  background: #eff2f8;
-}
-
-.method .social a i {
-  color: #37517e;
-  font-size: 16px;
-  margin: 0 2px;
-}
-
-.method .social a:hover {
-  background: #47b2e4;
-}
-
-.method .social a:hover i {
-  color: #fff;
-}
-
-.method .social a + a {
-  margin-left: 8px;
-}
-
-#how .animated {
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
-}
-
 @media (max-width: 991px) {
-  #how .animated {
-    -webkit-animation: none;
-    animation: none;
+  #how {
+    padding-left: 16px;
+    padding-right: 16px;
   }
   #how .how-img {
     text-align: center;
@@ -1112,48 +1058,33 @@ section {
   #how .container {
     padding-top: 30px;
   }
-}
 
-@media (max-width: 768px) {
-  #how h1 {
-    font-size: 28px;
-    line-height: 36px;
+  .method {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 6px;
+    padding-top: 20px;
   }
-  #how h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
-  #how .how-img img {
-    width: 70%;
-  }
-}
 
-@media (max-width: 575px) {
-  #how .how-img img {
-    width: 80%;
+  #how .middle-method {
+    transform: initial;
   }
-  #how .btn-get-started {
-    font-size: 16px;
-    padding: 10px 24px 11px 24px;
-  }
-}
 
-@-webkit-keyframes up-down {
-  0% {
-    transform: translateY(10px);
+  #how .gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 39px;
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(253, 242, 222, 0) 0%,
+      #fdf2de 91.79%
+    );
   }
-  100% {
-    transform: translateY(-10px);
-  }
-}
 
-@keyframes up-down {
-  0% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(-10px);
+  .method h4 {
+    font-size: 20px;
   }
 }
 
@@ -1366,10 +1297,6 @@ section {
 
 #download .btn-get-started:hover {
   background: #209dd8;
-}
-
-#download .animated {
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 @media (max-width: 991px) {
@@ -2995,6 +2922,8 @@ section {
   #footer .copyright,
   #footer .credits {
     text-align: left;
+    overflow-x: hidden;
+    padding-right: 0;
   }
 
   #footer .credits {
