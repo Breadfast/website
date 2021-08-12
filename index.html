@@ -79,20 +79,19 @@
   <section id="home-hero" class="d-flex align-items-center">
     <div class="container">
       <div class="row h-100">
-        <div class="col-lg-6 order-1 order-lg-1 home-hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <!-- <img src="assets/img/home/home-hero-img-1.png" class="img-fluid animated" alt=""> -->
-          <img src="assets/img/home/home-hero-img-2.png" class="img-fluid h-100" alt="" />
+        <div class="col-12 col-lg-6 hero-img-container">
+          <img src="assets/img/home/home-hero-img-1.png" class="img-fluid home-hero-elipse" alt="">
+          <img src="assets/img/home/home-hero-img-3.png" class="img-fluid home-hero-hand" alt="" />
+          <div class="gradient"></div>
         </div>
         <div class="
+              hero-txt-container
+              col-12 
               col-lg-6
-              d-flex
-              flex-column
-              justify-content-center
-              pt-4 pt-lg-0
-              order-2 order-lg-2
+              
             " data-aos="fade-up" data-aos-delay="200">
           <div>
-            <h1>A supermarket in your pocket</h1>
+            <h1>A supermarket in your pocket!</h1>
             <h2>
               Your one-stop-shop for bakeries, groceries, fruits and
               vegetables.
@@ -120,62 +119,49 @@
 
   <main id="main">
     <!-- ======= Thousands of Products Section ======= -->
-    <section id="products" class="d-flex align-items-center">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="
-                col-sm-12 col-lg-6
-                d-flex
-                justify-content-lg-end justify-content-center
-                p-0
-                order-lg-2
-              " data-aos="zoom-in" data-aos-delay="200">
-            <div class="dynamic-img-wrapper">
-              <div class="dynamic-img-container">
-                <!-- 
-                  Uncomment the card blow and loop on it replacing the source
-                  and comment the js script in assets/js/main.js titled "Temp products cards generator"
-                -->
-                <!-- 
-                  <div class="card">
-                    <img class="card-img-top" src="assets//img/home/products-img-1.png" alt="Card image cap">
-                  </div>
-                -->
-              </div>
-            </div>
+    <section id="products2">
+      <div class="products2-text">
+        <h1>Thousands of Products!</h1>
+        <p>
+          From eggs, bakeries, dairy products, fruits and vegetables,
+          frozen meats, pantry staples, laundry detergents, baby products,
+          all the way to pet supplies, grooming and personal care kits,
+          shop all daily your essentials from one seamless app.
+        </p>
+        <div class="d-flex justify-content-lg-start">
+          <a href="#about" class="btn btn-primary btn-explore">Explore Breadfast now!</a>
+        </div>
+      </div>
+      <div class="products2-img">
+        <div class="dynamic-img-wrapper">
+          <div class="dynamic-img-container">
+            <!-- 
+                          Uncomment the card blow and loop on it replacing the source
+                          and comment the js script in assets/js/main.js titled "Temp products cards generator"
+                        -->
+            <!-- 
+                          <div class="card">
+                            <img class="card-img-top" src="assets//img/home/products-img-1.png" alt="Card image cap">
+                          </div>
+                        -->
           </div>
-
-          <div class="
-                col-sm-12
-                offset-lg-1
-                col-lg-5
-                d-flex
-                flex-column
-                justify-content-center
-                pt-4 pt-lg-0
-              " data-aos="fade-up" data-aos-delay="200">
-            <h1>Thousands of Products!</h1>
-            <p>
-              From eggs, bakeries, dairy products, fruits and vegetables,
-              frozen meats, pantry staples, laundry detergents, baby products,
-              all the way to pet supplies, grooming and personal care kits,
-              shop all daily your essentials from one seamless app.
-            </p>
-            <div class="d-flex justify-content-lg-start">
-              <a href="#about" class="btn-explore scrollto">Explore Breadfast now!</a>
-            </div>
-          </div>
+          <div class="top-gradient"></div>
+          <div class="bottom-gradient"></div>
+          <div class="left-gradient"></div>
         </div>
       </div>
     </section>
+
+
     <!-- End Thousands of Products -->
 
     <!-- ======= How Breadfast Operates Section ======= -->
     <section id="how" class="d-flex align-items-center">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 order-1 order-lg-1 how-img" data-aos="zoom-in" data-aos-delay="200">
-            <img src="assets/img/home/how-img.png" class="img-fluid animated" alt="" />
+          <div class="col-lg-6 order-1 order-lg-1 how-img">
+            <img src="assets/img/home/how-img.png" class="img-fluid web-only" alt="" />
+            <img src="assets/img/home/how-img-mobile.png" class="img-fluid mobile-only" alt="" />
           </div>
           <div class="
                 col-lg-6
@@ -184,9 +170,8 @@
                 justify-content-center
                 pt-4 pt-lg-0
                 order-2 order-lg-2
-              " data-aos="fade-up" data-aos-delay="200">
-            <div class="method d-flex align-items-start flex-column flex-lg-row" data-aos="zoom-in"
-              data-aos-delay="100">
+              ">
+            <div class="method d-flex align-items-start flex-column flex-lg-row">
               <div class="pic">
                 <img src="assets/img/home/how-fast.png" class="img-fluid" alt="" />
               </div>
@@ -200,8 +185,7 @@
               </div>
             </div>
 
-            <div class="method d-flex align-items-start flex-column flex-lg-row" data-aos="zoom-in"
-              data-aos-delay="100">
+            <div class="method middle-method d-flex align-items-start flex-column flex-lg-row">
               <div class="pic">
                 <img src="assets/img/home/how-fresh.png" class="img-fluid" alt="" />
               </div>
@@ -215,8 +199,7 @@
               </div>
             </div>
 
-            <div class="method d-flex align-items-start flex-column flex-lg-row" data-aos="zoom-in"
-              data-aos-delay="100">
+            <div class="method d-flex align-items-start flex-column flex-lg-row">
               <div class="pic">
                 <img src="assets/img/home/how-scheduled.png" class="img-fluid" alt="" />
               </div>
@@ -233,56 +216,53 @@
         </div>
       </div>
     </section>
-    <!-- End Thousands of Products -->
+    <!-- End How Breadfast Operates -->
 
     <!-- ======= Careers Section ======= -->
-    <section id="careers" class="careers">
-      <div class="container" data-aos="fade-up">
-        <!-- <div class="section-title"> -->
+    <section id="home-careers" class="home-careers">
+      <div class="container">
         <h2>Careers &rarr;</h2>
-        <!-- </div> -->
 
-        <div class="row content py-3">
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <div class="card mb-3 b-0 box-shadow round-16 max-width-540">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="assets/img/home/careers-team.png" class="img-fluid rounded-start" alt="..." />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Join our team</h5>
-                    <p class="card-text">
-                      Join a hardworking, creative, and fast-growing team.
-                      Apply now and write your chapters in the Breadfast
-                      story!
-                    </p>
-                    <button type="button" class="btn btn-outline-primary job-btn">
-                      Go to Careers page
-                    </button>
-                  </div>
+        <div class="careers-cards-container">
+          <div class="card mb-3  ">
+            <div class="row g-0">
+              <div class="col-12 col-lg-4">
+                <img src="assets/img/home/careers-team.png" class="img-fluid mobile-only" alt="..." />
+                <img src="assets/img/home/careers-team-web.png" class="img-fluid web-only" alt="..." />
+              </div>
+              <div class="col-12  col-lg-8">
+                <div class="card-body">
+                  <h5 class="card-title">Join our team</h5>
+                  <p class="card-text">
+                    Join a hardworking, creative, and fast-growing team.
+                    Apply now and write your chapters in the Breadfast
+                    story!
+                  </p>
+                  <button type="button" class="btn btn-outline-primary job-btn">
+                    Go to Careers page
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <div class="card mb-3 box-shadow round-16 max-width-540">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="assets/img/home/careers-delivery.png" class="img-fluid rounded-start" alt="..." />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Join our delivery associates</h5>
-                    <p class="card-text">
-                      You're friendly, quick on your feet, and excellent
-                      navigator? Join our Delivery Associates and earn money
-                      now!
-                    </p>
-                    <button type="button" class="btn btn-outline-primary job-btn">
-                      Apply now!
-                    </button>
-                  </div>
+
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-12  col-lg-4">
+                <img src="assets/img/home/careers-delivery.png" class="img-fluid mobile-only" alt="..." />
+                <img src="assets/img/home/careers-delivery-web.png" class="img-fluid web-only" alt="..." />
+              </div>
+              <div class="col-12  col-lg-8">
+                <div class="card-body">
+                  <h5 class="card-title">Join our delivery associates</h5>
+                  <p class="card-text">
+                    You're friendly, quick on your feet, and excellent
+                    navigator? Join our Delivery Associates and earn money
+                    now!
+                  </p>
+                  <button type="button" class="btn btn-outline-primary job-btn">
+                    Apply now!
+                  </button>
                 </div>
               </div>
             </div>
@@ -292,12 +272,57 @@
     </section>
     <!-- End Careers Section -->
 
+    <!-- ======= FAQs Download the app Section ======= -->
+    <section id="faqs-download" class="
+              d-flex
+              align-items-center align-items-lg-end
+              justify-content-center
+            ">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 download-img">
+            <img src="assets/img/home/download-img.png" class="img-fluid web-only" alt="" />
+            <img src="assets/img/home/download-img-mobile.png" class="img-fluid mobile-only" alt="" />
+            <div class="gradient"></div>
+          </div>
+
+          <div class="col-lg-7 pt-4 pt-lg-0 download-text">
+            <div class="download-logo">
+              <img src="assets/img/home/download-logo.png" class="download-logo img-fluid" alt="breadfast logo" />
+            </div>
+            <h1>Ready to start shopping?</h1>
+            <p>Download Breadfast and join our happy shoppers!</p>
+            <div class="
+                      d-flex
+                      justify-content-start justify-content-lg-start
+                      align-items-center
+                    ">
+              <a href="https://play.google.com/store/apps/details?id=com.breadfast" class="lh-1">
+                <img src="assets/img/home/google-play.svg" alt="Google Play" class="web-only" />
+                <img src="assets/img/home/google-play-mobile.svg" alt="Google Play" class="mobile-only" />
+              </a>
+              <a href="https://apps.apple.com/eg/app/breadfast/id1288436997">
+                <img src="assets/img/home/app-store.svg" alt="App Store" class="web-only" />
+                <img src="assets/img/home/app-store-mobile.svg" alt="App Store" class="mobile-only" />
+              </a>
+              <a href="https://appgallery.huawei.com/#/app/C102125829">
+                <img src="assets/img/home/app-gallery.svg" alt="App Gallery" class="web-only" />
+                <img src="assets/img/home/app-gallery-mobile.svg" alt="App Store" class="mobile-only" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Download the app Section -->
+
+
     <!-- ======= Download the app Section ======= -->
-    <section id="download" class="d-flex align-items-center">
+    <!-- <section id="download" class="d-flex align-items-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-1 download-img" data-aos="zoom-in" data-aos-delay="200">
-            <img src="assets/img/home/download-img.png" class="img-fluid animated" alt="" />
+            <img src="assets/img/home/download-img.png" class="img-fluid " alt="" />
           </div>
           <div class="
                 col-lg-6
@@ -327,64 +352,110 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- End Download the app Section -->
 
     <!-- ======= Blog Section ======= -->
     <section id="blog" class="blog">
-      <div class="container" data-aos="fade-up">
-        <h2>Blog &rarr;</h2>
+      <h2>Blog Posts &rarr;</h2>
+      <div class="mobile-only mobile-blog mt-3">
 
-        <div class="row gy-4">
-          <div class="col-lg-12">
-            <div class="blog-slider swiper-container">
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <div class="card mb-3 box-shadow border-0 card-border-radius">
-                    <img src="assets/img/home/blog-1.png" class="card-img-top rounded-start" alt="..." />
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        Breadfast Cares: Breast Cancer Awareness
-                      </h5>
-                      <p class="card-text">
-                        <span>By Jana El Sokkary</span><span>On October 14,2020</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="card mb-3 box-shadow border-0 card-border-radius">
-                    <img src="assets/img/home/blog-2.png" class="card-img-top rounded-start" alt="..." />
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        The Original French Croissant Recipes
-                      </h5>
-                      <p class="card-text">
-                        <span>By Jana El Sokkary</span><span>On October 14,2020</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="card mb-3 box-shadow border-0 card-border-radius">
-                    <img src="assets/img/home/blog-3.png" class="card-img-top rounded-start" alt="..." />
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        Frothing Milk? Never Been Easier With Our Barista,
-                        Reda
-                      </h5>
-                      <p class="card-text">
-                        <span>By Jana El Sokkary</span><span>On October 14,2020</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
+        <div class="card mb-3">
+          <img src="assets/img/home/blog-1.png" class="card-img-top rounded-start" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">
+              Breadfast Cares: Breast Cancer Awareness
+            </h5>
+            <p class="card-text">
+              <span>By Jana El Sokkary</span><span>On October 14,2020</span>
+            </p>
+            <a href="#">Read More &rarr;</a>
           </div>
+        </div>
+        <div class="card mb-3">
+          <img src="assets/img/home/blog-2.png" class="card-img-top rounded-start" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">
+              The Original French Croissant Recipes
+            </h5>
+            <p class="card-text">
+              <span>By Jana El Sokkary</span><span>On October 14,2020</span>
+            </p>
+            <a href="#">Read More &rarr;</a>
+          </div>
+        </div>
+        <div class="card mb-3 ">
+          <img src="assets/img/home/blog-3.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">
+              Frothing Milk? Never Been Easier With Our Barista,
+              Reda
+            </h5>
+            <p class="card-text">
+              <span>By Jana El Sokkary</span><span>On October 14,2020</span>
+            </p>
+            <a href="#">Read More &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+        <div class="row gy-4 pt-3">
+          <div class="col-lg-4">
+
+            <div class="card mb-3">
+              <img src="assets/img/home/blog-1.png" class="card-img-top rounded-start" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Breadfast Cares: Breast Cancer Awareness
+                </h5>
+                <p class="card-text">
+                  <span>By Jana El Sokkary</span><span>On October 14,2020</span>
+                </p>
+                <a href="#">Read More &rarr;</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-4">
+
+            <div class="card mb-3">
+              <img src="assets/img/home/blog-2.png" class="card-img-top rounded-start" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  The Original French Croissant Recipes
+                </h5>
+                <p class="card-text">
+                  <span>By Jana El Sokkary</span><span>On October 14,2020</span>
+                </p>
+                <a href="#">Read More &rarr;</a>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-lg-4">
+
+            <div class="card mb-3 ">
+              <img src="assets/img/home/blog-3.png" class="card-img-top rounded-start" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Frothing Milk? Never Been Easier With Our Barista,
+                  Reda
+                </h5>
+                <p class="card-text">
+                  <span>By Jana El Sokkary</span><span>On October 14,2020</span>
+                </p>
+                <a href="#">Read More &rarr;</a>
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </div>
     </section>
@@ -471,10 +542,10 @@
       </div>
     </div>
 
-    <div class="container footer-bottom clearfix">
+    <div class="container footer-bottom">
       <div class="row">
-        <div class="col-lg-3">All Rights Reserved - 2021 Breadfast</div>
-        <div class="col-lg-9 credits">
+        <div class="col-lg-4">All Rights Reserved - 2021 Breadfast</div>
+        <div class="col-lg-8 credits">
           Apple and the Apple logo are trademarks of Apple Inc., registered in
           the U.S. and other countries. App Store is a service mark of Apple
           Inc. Android, Google Play and the Google Play logo are trademarks of
