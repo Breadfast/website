@@ -1,0 +1,146 @@
+@import 'config'; // have to be the first import
+@import 'utility';
+
+/* navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $light-green;
+  padding: 1rem 0rem;
+  z-index: 999;
+
+  .container {
+    justify-content: space-between;
+  }
+}
+.site-brand {
+  display: flex;
+  align-items: center;
+  font-size: 2.4rem;
+  color: $primary-default;
+  font-weight: 500;
+  opacity: 0.95;
+
+  img {
+    margin: 0 1rem;
+  }
+}
+#navbar-show-btn {
+  background: transparent;
+  color: $primary-default;
+  font-size: 2rem;
+  opacity: 0.9;
+  transition: $trans;
+  border: none;
+}
+#navbar-show-btn:hover {
+  opacity: 1;
+}
+
+/* navbar side menu */
+#navbar-collapse {
+  background-color: $primary-light;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  padding: 2rem;
+  transform: translateX(100%);
+  transition: $trans;
+}
+.navbar-collapse-rmw {
+  /* js related */
+  transform: translateX(0) !important;
+}
+#navbar-close-btn {
+  background: none;
+  border: none;
+  color: $primary-default;
+  width: 35px;
+  height: 35px;
+  border-radius: 0.2rem;
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+#navbar-close-btn:hover {
+  opacity: 0.8;
+}
+.navbar-nav {
+  margin-top: 5rem;
+}
+.nav-item {
+  margin: 1.6rem 0;
+}
+.nav-link {
+  color: $primary-default;
+  font-size: 1.2rem;
+  transition: $trans;
+}
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+/* header */
+header {
+  min-height: 70vh;
+  padding-top: 7rem;
+  background: $light-green;
+  flex-direction: column;
+  text-align: start;
+  animation: ease-in-top 0.4s both;
+}
+.header-title {
+  h1 {
+    font-size: 3.8rem;
+    letter-spacing: 2px;
+  }
+  h2 {
+    margin: 1.8rem auto;
+    max-width: 700px;
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+  .store-icons {
+    p {
+      margin-top: 1.6rem;
+      margin-bottom: 0;
+      font-weight: 800;
+      font-size: 1.4rem;
+    }
+    .icons {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+// change background on scroll
+.navbar-cng {
+  background-color: #fff;
+  box-shadow: 0px 4px 5px 0px rgba(48, 48, 48, 0.2);
+  transition: $trans;
+}
+
+@keyframes ease-in-top {
+  0% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@import 'components';
+@import 'responsive';

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap');
+
+$font-work-sans: 'Work Sans';
+$font-faro: 'Faro';
+$primary-default: #aa0082;
+$primary-light: #ffe9fa;
+$light-green: #edffef;
+$sand-default: #ffe8c4;
+$petroleum-dark: #383838;
+$trans: all 0.3s ease-in-out;
+
+// Set text color based on bg
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Set background & text color
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
