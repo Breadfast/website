@@ -94,27 +94,21 @@ header {
 }
 .header-title {
   h1 {
-    font-size: 3.8rem;
+    font-size: 2.8rem;
     letter-spacing: 2px;
   }
   h2 {
     margin: 1.8rem auto;
     max-width: 700px;
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   .store-icons {
     p {
       margin-top: 1.6rem;
       margin-bottom: 0;
       font-weight: 800;
-      font-size: 1.4rem;
-    }
-    .icons {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      flex-wrap: wrap;
+      font-size: 1rem;
     }
   }
 }
@@ -142,5 +136,5 @@ header {
   }
 }
 
-@import 'components';
 @import 'responsive';
+@import 'components';
