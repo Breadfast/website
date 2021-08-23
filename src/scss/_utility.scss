@@ -14,7 +14,7 @@ ul {
   list-style-type: none;
 }
 .container {
-  max-width: 1320px;
+  max-width: 1440px;
   padding: 0 1rem;
   margin: 0 auto;
 }
@@ -23,11 +23,12 @@ ul {
   align-items: center;
   justify-content: center;
 }
-.section {
+.view {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 4rem;
 }
 img {
   max-width: 100%;
@@ -53,9 +54,38 @@ img {
 .bg-sand {
   background-color: $default-sand;
 }
+.cover {
+  object-fit: cover;
+  width: 100%;
+}
 
 // css stop transition and animation
 .resize-animation-stopper * {
   animation: none !important;
   transition: none !important;
+}
+
+// padding and margins classes generator
+$spaceamounts: (0, 1, 2, 3, 4, 5);
+
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+  .mx-#{$space} {
+    margin: 0 #{$space}rem;
+  }
+
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+  .px-#{$space} {
+    padding: 0 #{$space}rem;
+  }
 }

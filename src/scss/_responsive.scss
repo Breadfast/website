@@ -12,8 +12,9 @@
 }
 
 @media screen and (min-width: 992px) {
-  .section {
+  .view {
     flex-direction: row;
+    margin: 0;
   }
   .header-content {
     .text {
