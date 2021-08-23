@@ -69,7 +69,7 @@
   opacity: 0.8;
 }
 .navbar-nav {
-  margin-top: 5rem;
+  margin: 0;
 }
 .nav-item {
   margin: 1.6rem 0;
@@ -143,6 +143,11 @@ header {
   img {
     margin-right: 1.4rem;
   }
+}
+
+// Careers Section
+h2 {
+  color: $primary-default;
 }
 
 // change background on scroll

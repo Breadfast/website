@@ -3,26 +3,32 @@ body {
   font-family: $font-faro, sans-serif;
   color: $petroleum-dark;
 }
+
 p {
   font-family: $font-work-sans, sans-serif;
 }
+
 a {
   color: $petroleum-dark;
   text-decoration: none;
 }
+
 ul {
   list-style-type: none;
 }
+
 .container {
   max-width: 1440px;
   padding: 0 1rem;
   margin: 0 auto;
 }
+
 .flex {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .view {
   display: flex;
   flex-direction: column;
@@ -30,12 +36,15 @@ ul {
   justify-content: space-between;
   margin-bottom: 4rem;
 }
+
 img {
   max-width: 100%;
 }
+
 .align-bottom {
   align-self: flex-end;
 }
+
 .btn {
   padding: 0.7rem 2.4rem;
   border-radius: 0.5rem;
@@ -46,14 +55,22 @@ img {
     opacity: 0.9;
     transition: var(--trans);
   }
+  &-secondary {
+    background-color: #fff;
+    color: $primary-default;
+    border: 1px solid $primary-default;
+  }
 }
+
 .lg-title {
   font-weight: 700;
   font-size: 2.4rem;
 }
+
 .bg-sand {
   background-color: $default-sand;
 }
+
 .cover {
   object-fit: cover;
   width: 100%;
