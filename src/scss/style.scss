@@ -114,6 +114,34 @@ header {
   }
 }
 
+// Products section
+.products-content {
+  margin: 2rem;
+  margin-bottom: p {
+    margin-bottom: 2rem;
+  }
+}
+
+// Operation Section
+.operate-card {
+  background-color: #fff;
+  padding: 1rem 1.4rem 1rem 0.5rem;
+  box-shadow: 0 0 1rem rgba(235, 212, 170, 0.25), 0 1.5rem 1.5rem rgba(235, 212, 170, 0.5);
+  border-radius: 1rem;
+  h3 {
+    color: $primary-default;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+  img {
+    margin-right: 1.4rem;
+  }
+}
+
 // change background on scroll
 .navbar-cng {
   background-color: #fff;
@@ -134,13 +162,6 @@ header {
     transform: translateY(0);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
-  }
-}
-
-.products-content {
-  margin: 0 3rem;
-  margin-bottom: p {
-    margin-bottom: 2rem;
   }
 }
 
