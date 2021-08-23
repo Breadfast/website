@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
-  .header-title {
-    .sub-header {
+  .header-content {
+    .text {
       font-size: 1rem;
     }
   }
@@ -10,8 +10,8 @@
   .section {
     flex-direction: row;
   }
-  .header-title {
-    .sub-header {
+  .header-content {
+    .text {
       font-size: 1.4rem;
     }
   }
@@ -42,14 +42,17 @@
 }
 
 @media screen and (min-width: 1124px) {
-  .header-title {
-    h1 {
-      font-size: 4rem;
-    }
+  h1 {
+    font-size: 4rem;
+  }
+  .lg-title {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  .header-content {
     .store-icons {
-      p {
-        font-size: 1.4rem;
-      }
       .icons {
         display: flex;
         justify-content: flex-start;

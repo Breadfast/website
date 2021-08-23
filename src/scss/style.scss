@@ -92,10 +92,11 @@ header {
   text-align: start;
   animation: ease-in-top 0.4s both;
 }
-.header-title {
+.header-content {
   h1 {
     font-size: 2.8rem;
     letter-spacing: 2px;
+    color: $primary-default;
   }
   h2 {
     margin: 1.8rem auto;
@@ -133,6 +134,13 @@ header {
     transform: translateY(0);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
+  }
+}
+
+.products-content {
+  margin: 0 3rem;
+  margin-bottom: p {
+    margin-bottom: 2rem;
   }
 }
 
