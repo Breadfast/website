@@ -100,7 +100,6 @@ header {
 }
 .header-content {
   h1 {
-    font-size: 3.7rem;
     letter-spacing: 2px;
     color: $primary-default;
   }
@@ -110,17 +109,17 @@ header {
     font-weight: 400;
     font-size: 1rem;
   }
-  .store-icons {
-    p {
-      margin-top: 1.6rem;
-      margin-bottom: 0;
-      font-weight: 800;
-      font-size: 1rem;
-    }
-    .icons {
-      img {
-        width: 150px;
-      }
+}
+.store-icons {
+  p {
+    margin-top: 1.6rem;
+    margin-bottom: 0;
+    font-weight: 800;
+    font-size: 1rem;
+  }
+  .icons {
+    img {
+      width: 150px;
     }
   }
 }
@@ -174,6 +173,14 @@ header {
     font-size: 1rem;
     text-align: justify;
   }
+}
+
+// start shopping section
+#round-logo {
+  display: none;
+}
+#app-preview {
+  padding-top: 4rem;
 }
 
 @keyframes ease-in-top {

@@ -3,6 +3,7 @@
     margin-top: 5rem;
   }
   .header-content {
+    flex-direction: row;
     .text {
       font-size: 1rem;
     }
@@ -10,10 +11,6 @@
 }
 
 @media screen and (min-width: 992px) {
-  .view {
-    flex-direction: row;
-    margin: 0;
-  }
   .header-content {
     .text {
       font-size: 1.4rem;
@@ -48,9 +45,6 @@
 @media screen and (min-width: 1124px) {
   h1 {
     font-size: 4rem;
-  }
-  .lg-title {
-    font-size: 3rem;
   }
   p {
     font-size: 1.4rem;
@@ -92,9 +86,28 @@
 }
 
 @media screen and (min-width: 1339px) {
+  .view {
+    flex-direction: row;
+    margin: 0;
+  }
+  .container {
+    max-width: 1440px;
+    padding: 0 10rem;
+    margin: 0 auto;
+  }
   .operate-card {
     display: flex;
     justify-content: stretch;
     align-items: center;
+  }
+  #download-app-img {
+    border: 1px solid red;
+    align-self: flex-end;
+  }
+  #round-logo {
+    display: block;
+  }
+  .start-shopping-content {
+    padding: 5rem 0;
   }
 }
