@@ -75,12 +75,18 @@
   margin: 1.6rem 0;
 }
 .nav-link {
-  color: $primary-default;
+  color: $petroleum-dark;
   font-size: 1.2rem;
   transition: $trans;
 }
 .nav-link:hover {
   opacity: 0.8;
+}
+// change background on scroll
+.navbar-cng {
+  background-color: #fff;
+  box-shadow: 0px 4px 5px 0px rgba(48, 48, 48, 0.2);
+  transition: $trans;
 }
 
 /* header */
@@ -94,7 +100,7 @@ header {
 }
 .header-content {
   h1 {
-    font-size: 2.8rem;
+    font-size: 3.7rem;
     letter-spacing: 2px;
     color: $primary-default;
   }
@@ -111,13 +117,17 @@ header {
       font-weight: 800;
       font-size: 1rem;
     }
+    .icons {
+      img {
+        width: 150px;
+      }
+    }
   }
 }
 
 // Products section
 .products-content {
-  margin: 2rem;
-  margin-bottom: p {
+  p {
     margin-bottom: 2rem;
   }
 }
@@ -131,7 +141,6 @@ header {
   h3 {
     margin: 0;
     margin-bottom: 0.2rem;
-    color: $primary-default;
     font-weight: 800;
     font-size: 1.5rem;
   }
@@ -146,15 +155,25 @@ header {
 }
 
 // Careers Section
-h2 {
-  color: $primary-default;
-}
-
-// change background on scroll
-.navbar-cng {
+.careers-card {
   background-color: #fff;
-  box-shadow: 0px 4px 5px 0px rgba(48, 48, 48, 0.2);
-  transition: $trans;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05), 0px 25px 25px rgba(0, 0, 0, 0.07);
+  border-top-left-radius: 1.8rem;
+  border-top-right-radius: 1.8rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  h3 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  p {
+    margin: 0;
+    margin-bottom: 1.9rem;
+    font-size: 1rem;
+    text-align: justify;
+  }
 }
 
 @keyframes ease-in-top {
