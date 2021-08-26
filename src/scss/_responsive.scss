@@ -8,12 +8,20 @@
       font-size: 1rem;
     }
   }
+  .store-icons {
+    .icons {
+      img {
+        width: 140px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 992px) {
   .header-content {
     .text {
       font-size: 1.4rem;
+      margin: 1.8rem 0;
     }
   }
   #navbar-show-btn {
@@ -49,13 +57,14 @@
   p {
     font-size: 1.4rem;
   }
-  .header-content {
-    .store-icons {
-      .icons {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: wrap;
+  .store-icons {
+    .icons {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      img {
+        margin-right: 0.4rem;
       }
     }
   }
