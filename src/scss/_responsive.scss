@@ -27,6 +27,9 @@
   #navbar-show-btn {
     display: none;
   }
+  .navbar-footer-container {
+    display: none;
+  }
   #navbar-collapse {
     display: block !important;
     background-color: transparent;
@@ -43,10 +46,18 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 0;
+    img {
+      display: none;
+    }
   }
   .nav-item {
     margin: 0;
     margin-left: 2rem;
+  }
+  .nav-link {
+    color: $petroleum-dark;
+    font-size: 1rem;
+    font-weight: 400;
   }
 }
 
@@ -123,5 +134,10 @@
     grid-auto-columns: 350px;
     gap: 2rem;
     overflow-x: hidden;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }

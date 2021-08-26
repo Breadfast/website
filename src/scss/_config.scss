@@ -19,18 +19,3 @@ $default-sand: #ffe8c4;
 $petroleum-dark: #383838;
 $trans: all 0.3s ease-in-out;
 $gap: 1rem;
-
-// Set text color based on bg
-@function set-text-color($color) {
-  @if (lightness($color) > 70) {
-    @return #333;
-  } @else {
-    @return #fff;
-  }
-}
-
-// Set background & text color
-@mixin set-background($color) {
-  background-color: $color;
-  color: set-text-color($color);
-}
