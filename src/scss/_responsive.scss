@@ -118,4 +118,10 @@
   .start-shopping-content {
     padding: 5rem 0;
   }
+  .horizontal-media-scroller {
+    padding: 0 10rem;
+    grid-auto-columns: 350px;
+    gap: 2rem;
+    overflow-x: hidden;
+  }
 }

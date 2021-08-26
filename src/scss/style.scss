@@ -183,6 +183,69 @@ header {
   padding-top: 4rem;
 }
 
+// Blog posts section
+.horizontal-media-scroller {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 310px;
+  gap: 1rem;
+  padding-inline: $gap;
+  padding-block: calc($gap / 2);
+
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  scroll-padding-inline: $gap;
+  outline-offset: -5px;
+
+  figure {
+    margin: 0;
+    outline-offset: calc($gap / 4);
+    background-color: #fff;
+    border-radius: 1.2rem;
+    img {
+      border-radius: 0rem;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .blog-post-content {
+    padding: 1.5rem 1rem;
+
+    figcaption {
+      font-family: $font-faro-bold;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .metadata {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.8rem;
+      p {
+        font-size: 0.9rem;
+        margin: 0;
+        margin-bottom: 0.2rem;
+      }
+    }
+    a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      img {
+        width: 15px;
+        margin-left: 0.2rem;
+      }
+    }
+  }
+}
+.blog-posts-header {
+  h2 {
+    margin: 0;
+    padding-bottom: 1.5rem;
+  }
+}
+
 @keyframes ease-in-top {
   0% {
     -webkit-transform: translateY(-500px);

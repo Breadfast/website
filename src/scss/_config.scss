@@ -18,6 +18,7 @@ $light-green: #edffef;
 $default-sand: #ffe8c4;
 $petroleum-dark: #383838;
 $trans: all 0.3s ease-in-out;
+$gap: 1rem;
 
 // Set text color based on bg
 @function set-text-color($color) {
