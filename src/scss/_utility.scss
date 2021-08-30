@@ -64,33 +64,16 @@ ul {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .align-bottom {
   align-self: flex-end;
 }
 
-.btn {
-  font-family: $font-work-sans;
-  font-weight: 700;
-  padding: 0.7rem 2.4rem;
-  border-radius: 0.5rem;
-  background-color: $primary-default;
-  color: #fff;
-  &:hover {
-    opacity: 0.9;
-    transition: var(--trans);
-  }
-  &-secondary {
-    background-color: #fff;
-    color: $primary-default;
-    border: 1px solid $primary-default;
-  }
-}
-
 .lg-title {
+  font-size: 1.5rem;
   font-weight: 700;
-  font-size: 2.4rem;
 }
 
 .bold {
