@@ -1,0 +1,107 @@
+// padding and margins classes generator
+$spaceamounts: (0, 1, 2, 3, 4, 5);
+
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+  .mx-#{$space} {
+    margin: 0 #{$space}rem;
+  }
+
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+  .px-#{$space} {
+    padding: 0 #{$space}rem;
+  }
+}
+
+html,
+body {
+  font-family: $font-faro, sans-serif;
+  color: $petroleum-dark;
+}
+
+p {
+  font-family: $font-work-sans, sans-serif;
+}
+
+a {
+  color: $petroleum-dark;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.align-bottom {
+  align-self: flex-end;
+}
+
+.lg-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.bold {
+  font-family: $font-faro-bold;
+}
+
+.bg-sand {
+  background-color: $default-sand;
+}
+.bg-primary-light {
+  background-color: $primary-light;
+}
+
+.cover {
+  object-fit: cover;
+  width: 100%;
+}
+
+.primary-color {
+  color: $primary-default;
+}
+
+.flex-reverse {
+  flex-direction: column-reverse;
+}
+
+// css stop transition and animation
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}

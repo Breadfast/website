@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breadfast</title>
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="scss/normalize.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="scss/style.scss" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="container flex">
+        <a href="index.html" class="site-brand">
+          <img src="assets/images/logo.png" alt="logo" />
+          Breadfast
+        </a>
+
+        <button type="button" id="navbar-show-btn" class="flex">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div id="navbar-collapse">
+          <button type="button" id="navbar-close-btn" class="flex">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <img src="assets/images/logo.png" alt="logo" />
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Covid-19</a>
+            </li>
+          </ul>
+          <div class="navbar-footer-container">
+            <div class="navbar-footer">
+              <img src="./assets/images/breadfast_mobile_app_iOS 1.png" alt="iOS app" />
+              <div class="store-icons">
+                <h3 class="bold">Download the app and start ordering!</h3>
+                <div class="icons">
+                  <img
+                    src="assets/images/google-play-badge-logo-svg-vector.svg"
+                    alt="google play"
+                  />
+                  <img
+                    src="assets/images/download-on-the-app-store-apple-logo-svg-vector.svg"
+                    alt="app store"
+                  />
+                  <img src="assets/images/bt_huawei.png" alt="app gallery" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- Header -->
+    <header class="flex">
+      <div class="container">
+        <div class="view">
+          <img src="assets/images/Hand-Visual.png" alt="hand visual" />
+          <div class="header-content">
+            <h1 class="bold">A supermarket in your pocket!</h1>
+            <h2 class="text">Your one-stop-shop for bakeries, groceries, fruits and vegetables.</h2>
+            <div class="store-icons">
+              <p class="bold">Download the app and order!</p>
+              <div class="icons">
+                <img src="assets/images/google-play-badge-logo-svg-vector.svg" alt="google play" />
+                <img
+                  src="assets/images/download-on-the-app-store-apple-logo-svg-vector.svg"
+                  alt="app store"
+                />
+                <img src="assets/images/bt_huawei.png" alt="app gallery" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- Thousands of products section-->
+    <section class="flex">
+      <div class="container p-0">
+        <div class="view flex-reverse">
+          <div class="products-content">
+            <h2 class="lg-title bold">Thousands of Products!</h2>
+            <p class="text">
+              From eggs, bakeries, dairy products, fruits and vegetables, frozen meats, pantry
+              staples, laundry detergents, baby products, all the way to pet supplies, grooming and
+              personal care kits, shop all daily your essentials from one seamless app.
+            </p>
+            <button class="btn btn-primary" type="button">
+              <a href="#">Explore Breadfast now! </a>
+            </button>
+          </div>
+          <img class="cover" src="assets/images/all_products.png" alt="All products" />
+        </div>
+      </div>
+    </section>
+    <!-- enf of Thousands of products section-->
+
+    <!-- how breadfast operates section -->
+    <section class="flex bg-sand">
+      <div class="container">
+        <div class="view">
+          <img src="assets/images/DeliveryMan 1.png" alt="Delivery Man" />
+          <div class="operate-content">
+            <div class="operate-card my-1">
+              <img src="assets/images/operation-1.png" />
+              <div class="card-content">
+                <h3 class="primary-color bold">Fast delivery</h3>
+                <p>
+                  Try ‘Breadfast Now’ and get your groceries in less than 60 minutes. Breadfast Now
+                  is available 24 hours a day, 7 days a week.
+                </p>
+              </div>
+            </div>
+            <div class="operate-card my-1">
+              <img src="assets/images/operation-2.png" />
+              <div class="card-content">
+                <h3 class="primary-color bold">Fresh on demand groceries</h3>
+                <p>
+                  Sourced, baked, and assembled everyday in our warehouses, our bakeries, eggs,
+                  fruits and vegetables are always delivered fresh.
+                </p>
+              </div>
+            </div>
+            <div class="operate-card my-1">
+              <img src="assets/images/operation-3.png" />
+              <div class="card-content">
+                <h3 class="primary-color bold">Scheduled delivery</h3>
+                <p>
+                  Choose ‘Breadfast Tomorrow’ for scheduled next day deliveries. You can order as
+                  early as 5 am.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- enf of how breadfast operates section -->
+
+    <!-- career section -->
+    <section class="flex py-2">
+      <div class="container">
+        <a class="" href="#">
+          <h2 class="lg-title primary-color bold">
+            Careers
+            <img src="./assets/images/Arrow_-_Right.png" alt="arrow right" />
+          </h2>
+        </a>
+        <div class="view">
+          <div class="careers-content">
+            <div class="careers-card my-2">
+              <img class="cover" src="assets/images/careers-1.png" />
+              <div class="card-content p-1">
+                <h3 class="primary-color bold">Join our team</h3>
+                <p>
+                  Join a hardworking, creative, and fast-growing team. Apply now and write your
+                  chapters in the Breadfast story!
+                </p>
+                <button class="btn btn-secondary" type="button">
+                  <a href="#">Go to Careers page</a>
+                </button>
+              </div>
+            </div>
+            <div class="careers-card my-2">
+              <img class="cover" src="assets/images/careers-2.png" />
+              <div class="card-content p-1">
+                <h3 class="primary-color bold">Join our delivery associates</h3>
+                <p>
+                  You're friendly, quick on your feet, and excellent navigator? Join our Delivery
+                  Associates and earn money now!
+                </p>
+                <button class="btn btn-secondary" type="button"><a href="#">Apply now!</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- enf of career section -->
+
+    <!-- start shopping section-->
+    <section class="flex bg-primary-light">
+      <div class="container">
+        <div class="view">
+          <img id="app-preview" src="./assets/images/download-app-image.png" alt="download app" />
+          <div class="start-shopping-content">
+            <div>
+              <img id="round-logo" src="./assets/images/round-logo.png" alt="Breadfast Logo" />
+              <h2 class="primary-color bold">Ready to start shopping?</h2>
+              <p>Download Breadfast and join our happy shoppers!</p>
+              <div class="store-icons">
+                <div class="icons">
+                  <img
+                    src="assets/images/google-play-badge-logo-svg-vector.svg"
+                    alt="google play"
+                  />
+                  <img
+                    src="assets/images/download-on-the-app-store-apple-logo-svg-vector.svg"
+                    alt="app store"
+                  />
+                  <img src="assets/images/bt_huawei.png" alt="app gallery" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- enf of start shopping section -->
+
+    <!-- Blog posts section -->
+    <section class="bg-sand py-4">
+      <div class="container">
+        <a class="blog-posts-header" href="#">
+          <h2 class="lg-title primary-color bold">
+            Blog Posts
+            <img src="./assets/images/Arrow_-_Right.png" alt="arrow right" />
+          </h2>
+        </a>
+      </div>
+      <div class="horizontal-media-scroller">
+        <figure>
+          <picture>
+            <img src="./assets/images/blog-post-1.png" />
+          </picture>
+          <div class="blog-post-content">
+            <a href="#">
+              <figcaption>Breadfast Cares: Breast Cancer Awareness</figcaption>
+            </a>
+            <dev class="metadata">
+              <div class="author">
+                <p>By</p>
+                <p>Jana El Sokkary</p>
+              </div>
+              <div class="date">
+                <p>On</p>
+                <p>October 14,2020</p>
+              </div>
+            </dev>
+            <a class="primary-color" href="#">
+              Read More
+              <img src="./assets/images/Arrow_-_Right.png" alt="arrow right" />
+            </a>
+          </div>
+        </figure>
+        <figure>
+          <picture>
+            <img src="./assets/images/blog-post-2.png" />
+          </picture>
+          <div class="blog-post-content">
+            <a href="#">
+              <figcaption>The Original French Croissant Recipes</figcaption>
+            </a>
+            <dev class="metadata">
+              <div class="author">
+                <p>By</p>
+                <p>Jana El Sokkary</p>
+              </div>
+              <div class="date">
+                <p>On</p>
+                <p>October 14,2020</p>
+              </div>
+            </dev>
+            <a class="primary-color" href="#">
+              Read More
+              <img src="./assets/images/Arrow_-_Right.png" alt="arrow right" />
+            </a>
+          </div>
+        </figure>
+        <figure>
+          <picture>
+            <img src="./assets/images/blog-post-3.png" />
+          </picture>
+          <div class="blog-post-content">
+            <a href="#">
+              <figcaption>Frothing Milk? Never Been Easier With Our Barista, Reda</figcaption>
+            </a>
+            <dev class="metadata">
+              <div class="author">
+                <p>By</p>
+                <p>Jana El Sokkary</p>
+              </div>
+              <div class="date">
+                <p>On</p>
+                <p>October 14,2020</p>
+              </div>
+            </dev>
+            <a class="primary-color" href="#">
+              Read More
+              <img src="./assets/images/Arrow_-_Right.png" alt="arrow right" />
+            </a>
+          </div>
+        </figure>
+      </div>
+    </section>
+    <!-- end of blog posts section -->
+
+    <!-- footer -->
+    <footer class="py-2">
+      <div class="container footer">
+        <div class="footer-item">
+          <a href="index.html" class="site-brand">
+            <img src="assets/images/logo-white.png" alt="logo" />
+            Breadfast
+          </a>
+          <ul class="social-links">
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-instagram-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-youtube-square"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h3 class="bold">Get to know us</h3>
+          <ul>
+            <li><a href="#">Covid-19</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h3 class="bold">Company</h3>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h3 class="bold">Download the app and order!</h3>
+          <div class="store-icons">
+            <div class="icons">
+              <img src="assets/images/google-play-badge-logo-svg-vector.svg" alt="google play" />
+              <img
+                src="assets/images/download-on-the-app-store-apple-logo-svg-vector.svg"
+                alt="app store"
+              />
+              <img src="assets/images/bt_huawei.png" alt="app gallery" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="container footer-row">
+        <div class="footer-item">
+          <h6>All Rights Reserved - 2021 Breadfast</h6>
+          <p class="copyright">
+            Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other
+            countries. App Store is a service mark of Apple Inc. Android, Google Play and the Google
+            Play logo are trademarks of Google LLC. AppGallery, Huawei and the AppGallery Logo are
+            trademarks of Huawei Technologies Co, Ltd.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

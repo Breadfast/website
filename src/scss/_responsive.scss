@@ -1,0 +1,155 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 5rem;
+    margin: 0 auto;
+  }
+  .horizontal-media-scroller {
+    padding: 0 5rem;
+  }
+  .navbar-nav {
+    margin-top: 5rem;
+  }
+  .header-content {
+    flex-direction: row;
+    .text {
+      font-size: 1rem;
+    }
+  }
+  .store-icons {
+    .icons {
+      img {
+        width: 140px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .view {
+    flex-direction: row;
+    margin: 0;
+  }
+  .header-content {
+    .text {
+      font-size: 1.4rem;
+      margin: 1.8rem 0;
+    }
+  }
+  #navbar-show-btn {
+    display: none;
+  }
+  .navbar-footer-container {
+    display: none;
+  }
+  #navbar-collapse {
+    display: block !important;
+    background-color: transparent;
+    transform: translateX(0);
+    height: auto;
+    padding: 0;
+    position: static;
+    width: 100%;
+  }
+  #navbar-close-btn {
+    display: none;
+  }
+  .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0;
+    img {
+      display: none;
+    }
+  }
+  .nav-item {
+    margin: 0;
+    margin-left: 2rem;
+  }
+  .nav-link {
+    color: $petroleum-dark;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 1124px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .lg-title {
+    font-weight: 700;
+    font-size: 2.4rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  .store-icons {
+    .icons {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      img {
+        margin-right: 0.4rem;
+      }
+    }
+  }
+  .careers-content {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+  }
+  .careers-card:first-of-type {
+    margin-right: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .careers-card {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    border-radius: 1.8rem;
+    img {
+      width: 203px;
+      border-top-left-radius: 1.8rem;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1339px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 10rem;
+    margin: 0 auto;
+  }
+  .operate-card {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+  }
+  #download-app-img {
+    align-self: flex-end;
+  }
+  #round-logo {
+    display: block;
+  }
+  .start-shopping-content {
+    padding: 5rem 0;
+  }
+  .horizontal-media-scroller {
+    padding: 0 10rem;
+    grid-auto-columns: 350px;
+    gap: 2rem;
+    overflow-x: hidden;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
